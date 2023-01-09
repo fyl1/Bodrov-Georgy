@@ -1,0 +1,85 @@
+.intro {
+  overflow: hidden;
+  // .intro__inner
+
+  &__inner {
+    padding: rem-calc(84 0 0 0);
+  }
+
+  // .intro__img
+
+  &__img {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  //   .intro__img--cto
+  &__img--cto {
+    padding-bottom: rem-calc(20);
+  }
+ //   .intro__img--mac 
+  &__img--mac {
+    margin-bottom: -5px;
+  }
+
+  // .intro__title
+
+  &__title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: rem-calc(120);
+    line-height: 100%;
+
+    text-align: center;
+
+    color: $main-color;
+  }
+
+  // .intro__subtitle
+
+  &__subtitle {
+    max-width: rem-calc(455);
+    margin: 0 auto;
+    padding: rem-calc(35 0 44 0);
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.title {}
+
+.subtext {}
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+ 
+}
+@media (min-width: 1240px) {
+}
+
+@media (min-width: 1686px) {
+}
+@media (min-width: 1786px) {
+}
+@media (max-width: 1199px) {
+  .intro__title{
+    font-size: rem-calc(90);
+  }
+}
+@media (max-width: 991px) {
+  .intro__title{
+    font-size: rem-calc(60);
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
+}

@@ -1,0 +1,332 @@
+.works {
+    // .works__inner
+
+    &__inner {
+        padding-top: 195px;
+    }
+
+    // .works__items
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: rem-calc(40);
+        grid-template-areas:
+            ". . ."
+            ". . ."
+            ". . ."
+            ". . .";
+    }
+}
+
+.works-card {
+    overflow: hidden;
+    position: relative;
+    background-color: #1a1a1a;
+    border-radius: rem-calc(24);
+    max-height: rem-calc(265);
+    z-index: 1;
+    transition: 1s;
+    outline: 0px solid;
+    scale: 1;
+
+    &.works-card--Alibaba {
+        &:hover {
+            outline: 1900px solid rgba(#FB6322, 0.706);
+        }
+
+        &.active {}
+    }
+
+    &.works-card--knowledge {
+        &:hover {
+            outline: 1900px solid rgba(#5289EB, 0.706);
+        }
+
+        &.active {}
+    }
+
+    &.works-card--x5 {
+        &:hover {
+            outline: 1900px solid rgba(#F78F1E, 0.706);
+        }
+        &.active{
+
+        }
+    }
+
+    &.works-card--wo {
+        &:hover {
+            outline: 1900px solid rgba(#FBD81C, 0.706);
+        }
+        &.active{
+
+        }
+    }
+
+    &.works-card--pyaterochka {
+        &:hover {
+            outline: 1900px solid rgba(#FFB1B1, 0.706);
+        }
+        &.active{
+
+        }
+    }
+
+    &.works-card--likeСenter {
+        &:hover {
+            outline: 1900px solid rgba(#F78F1E, 0.706);
+        }
+        &.active{
+
+        }
+    }
+
+    &.works-card--36.6 {
+        &:hover {
+            outline: 1900px solid rgba(#4374AE, 0.706);
+        }
+        &.active{
+
+        }
+    }
+
+    &.works-card--vanguard {
+        &:hover {
+            outline: 1900px solid rgba(#E94D05, 0.706);
+        }
+        &.active{
+
+        }
+    }
+
+
+    &:hover {
+
+        z-index: 2;
+        transition: 1s;
+        scale: 1.1;
+
+        .works-card__inner {
+            padding: 13px 24px 24px 24px;
+        }
+
+        & .works-card__logo {
+            //   position: absolute;
+            //   left: rem-calc(10);
+            //   top: 10px;
+            scale: 0.4;
+            transition: 1s;
+            max-width: 60px;
+        }
+
+        .works-card__header {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+        }
+
+        & .works-card__items {
+
+            transform: translateY(10px);
+            visibility: visible;
+            transition: 1s;
+        }
+
+        & .works-card__text {
+            transform: translateY(0px);
+            visibility: visible;
+            // transition: 1s;
+        }
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
+            z-index: 1;
+        }
+    }
+
+
+    // .works-card__inner
+
+    &__inner {
+        height: 100%;
+
+        padding: rem-calc(40);
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    // .works-card__header
+
+    &__header {
+        margin-bottom: rem-calc(8);
+    }
+
+    // .works-card__img
+
+    &__img {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: fit-content;
+        }
+    }
+
+    // .works-card__logo
+
+    &__logo {
+        scale: 1;
+        transition: 1s;
+        max-width: 100%;
+    }
+
+    // .works-card__items
+
+    &__items {
+        display: flex;
+        justify-content: flex-end;
+        visibility: hidden;
+        transform: translateY(-40px);
+
+    }
+
+    // .works-card__text
+
+    &__text {
+        visibility: hidden;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+
+        font-feature-settings: 'pnum'on, 'lnum'on;
+
+        color: #E5DCD7;
+        transform: translateY(100px);
+        transition: 1s;
+
+    }
+
+    p {
+        opacity: 0.6;
+        margin-bottom: rem-calc(16);
+    }
+
+    // .works-card__subtitle
+
+    &__subtitle {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 150%;
+        /* identical to box height, or 21px */
+
+        font-feature-settings: 'pnum'on, 'lnum'on;
+
+        color: #E5DCD7;
+        margin-bottom: rem-calc(8);
+
+    }
+}
+
+.works-card-item {
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+
+    color: #FFFFFF;
+    margin-right: 4px;
+}
+
+.works-card-data {
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+
+    color: #FFFFFF;
+    margin-right: 4px;
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1100px) {}
+
+@media (min-width: 1240px) {}
+
+@media (min-width: 1686px) {}
+
+@media (min-width: 1786px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .works__items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: rem-calc(40);
+        grid-template-areas:
+            ". . "
+            ". ."
+            ". . "
+            ". . ";
+    }
+}
+
+@media (max-width: 767px) {
+    .works__items {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: rem-calc(40);
+        grid-template-areas:
+            ". "
+            ". "
+            ". "
+            ". ";
+    }
+}
+
+@media (max-width: 579px) {}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 379px) {}

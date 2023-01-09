@@ -1,0 +1,75 @@
+.skill-ribbon {
+    height: 40px;
+    background-color: #FFAE1B;
+
+    // .skill-ribbon--second
+    &--second {
+        background-color: #000000;
+
+        .skill-ribbon__item {
+            color: #FFAE1B;
+        }
+    }
+
+    // .skill-ribbon__inner
+
+    &__inner {}
+
+    // .skill-ribbon__item
+
+    &__item {
+        min-width: fit-content;
+        font-family: 'Urbanist';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 100%;
+        /* identical to box height, or 20px */
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #000000;
+        padding: 10px 0;
+
+        span {
+            margin-left: rem-calc(40);
+        }
+    }
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1100px) {}
+
+@media (min-width: 1240px) {}
+
+@media (min-width: 1686px) {}
+
+@media (min-width: 1786px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .skill-ribbon {
+        height: 30px;
+    }
+    .skill-ribbon__item{
+        font-size: 12px;
+        span {
+            margin-left: rem-calc(20);
+        }
+    }
+}
+
+@media (max-width: 579px) {}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 379px) {}
