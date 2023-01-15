@@ -36,7 +36,7 @@
             outline: 1900px solid rgba(#FB6322, 0.706);
         }
 
-        &.active {}
+        &.active {  outline: 1900px solid rgba(#FB6322, 0.706);}
     }
 
     &.works-card--knowledge {
@@ -44,7 +44,7 @@
             outline: 1900px solid rgba(#5289EB, 0.706);
         }
 
-        &.active {}
+        &.active { outline: 1900px solid rgba(#5289EB, 0.706);}
     }
 
     &.works-card--x5 {
@@ -52,7 +52,7 @@
             outline: 1900px solid rgba(#F78F1E, 0.706);
         }
         &.active{
-
+            outline: 1900px solid rgba(#F78F1E, 0.706);
         }
     }
 
@@ -61,7 +61,7 @@
             outline: 1900px solid rgba(#FBD81C, 0.706);
         }
         &.active{
-
+            outline: 1900px solid rgba(#FBD81C, 0.706);
         }
     }
 
@@ -70,7 +70,7 @@
             outline: 1900px solid rgba(#FFB1B1, 0.706);
         }
         &.active{
-
+            outline: 1900px solid rgba(#FFB1B1, 0.706);
         }
     }
 
@@ -79,7 +79,7 @@
             outline: 1900px solid rgba(#F78F1E, 0.706);
         }
         &.active{
-
+            outline: 1900px solid rgba(#F78F1E, 0.706);
         }
     }
 
@@ -88,7 +88,7 @@
             outline: 1900px solid rgba(#4374AE, 0.706);
         }
         &.active{
-
+            outline: 1900px solid rgba(#4374AE, 0.706);
         }
     }
 
@@ -97,7 +97,7 @@
             outline: 1900px solid rgba(#E94D05, 0.706);
         }
         &.active{
-
+            outline: 1900px solid rgba(#E94D05, 0.706);
         }
     }
 
@@ -151,6 +151,7 @@
             z-index: 1;
         }
     }
+
 
 
     // .works-card__inner
