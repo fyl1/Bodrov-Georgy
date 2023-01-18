@@ -958,7 +958,6 @@ a {
 
 .works-card__header {
   margin-bottom: 0.5rem;
-  pointer-events: none;
 }
 
 .works-card__img {
@@ -985,7 +984,6 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   max-width: 100%;
-  pointer-events: none;
 }
 
 .works-card__items {
@@ -998,7 +996,6 @@ a {
   visibility: hidden;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
-  pointer-events: none;
 }
 
 .works-card__text {
@@ -1016,7 +1013,6 @@ a {
           transform: translateY(100px);
   -webkit-transition: 1s;
   transition: 1s;
-  pointer-events: none;
 }
 
 .works-card p {

@@ -54,7 +54,7 @@ var swiper = new Swiper(".swiper-container_1", {
       clickable: true,
     },
   });
-
+  console.log(modals, "modals");
 
   modals.forEach((el) => {
     console.log(el);

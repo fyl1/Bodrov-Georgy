@@ -168,7 +168,7 @@
 
     &__header {
         margin-bottom: rem-calc(8);
-        pointer-events: none;
+     
     }
 
     // .works-card__img
@@ -190,7 +190,7 @@
         scale: 1;
         transition: 1s;
         max-width: 100%;
-        pointer-events: none;
+     
     }
 
     // .works-card__items
@@ -200,7 +200,7 @@
         justify-content: flex-end;
         visibility: hidden;
         transform: translateY(-40px);
-        pointer-events: none;
+      
 
     }
 
@@ -221,7 +221,7 @@
         color: #E5DCD7;
         transform: translateY(100px);
         transition: 1s;
-        pointer-events: none;
+     
 
     }
 
