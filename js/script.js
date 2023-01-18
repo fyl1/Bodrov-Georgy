@@ -60,7 +60,7 @@ var swiper = new Swiper(".swiper-container_1", {
     console.log(el);
    
 	el.addEventListener('click', (e) => {
-    console.log(e.target);
+    console.log(e.target, "e.target");
  
 		let path = e.currentTarget.getAttribute('data-path');
     el.classList.add('active')
