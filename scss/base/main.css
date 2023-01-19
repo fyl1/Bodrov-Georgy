@@ -562,6 +562,14 @@ a {
   transition: transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
+::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px;
+  /* ширина scrollbar'a */
+  background: transparent;
+  /* опционально */
+}
+
 .modal--open {
   pointer-events: auto;
   opacity: 1;
@@ -582,6 +590,10 @@ a {
   border-radius: 20px;
   text-align: center;
   overflow: auto;
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .modal__header {
@@ -677,6 +689,10 @@ a {
 
 .btn--close-modal {
   background-color: transparent;
+}
+
+.btn--close-modal img {
+  pointer-events: none;
 }
 
 .modal-intro {
