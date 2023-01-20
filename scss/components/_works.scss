@@ -33,71 +33,81 @@
 
     &.works-card--Alibaba {
         &:hover {
-            outline: 1900px solid rgba(#FB6322, 0.706);
+            outline: 1900px solid #FB6322;
         }
 
-        &.active {  outline: 1900px solid rgba(#FB6322, 0.706);}
+        &.active {
+            outline: 1900px solid #FB6322;
+        }
     }
 
     &.works-card--knowledge {
         &:hover {
-            outline: 1900px solid rgba(#5289EB, 0.706);
+            outline: 1900px solid #5289EB;
         }
 
-        &.active { outline: 1900px solid rgba(#5289EB, 0.706);}
+        &.active {
+            outline: 1900px solid #5289EB;
+        }
     }
 
     &.works-card--x5 {
         &:hover {
-            outline: 1900px solid rgba(#F78F1E, 0.706);
+            outline: 1900px solid #F78F1E;
         }
-        &.active{
-            outline: 1900px solid rgba(#F78F1E, 0.706);
+
+        &.active {
+            outline: 1900px solid #F78F1E;
         }
     }
 
     &.works-card--wo {
         &:hover {
-            outline: 1900px solid rgba(#FBD81C, 0.706);
+            outline: 1900px solid #FBD81C;
         }
-        &.active{
-            outline: 1900px solid rgba(#FBD81C, 0.706);
+
+        &.active {
+            outline: 1900px solid #FBD81C;
         }
     }
 
     &.works-card--pyaterochka {
         &:hover {
-            outline: 1900px solid rgba(#FFB1B1, 0.706);
+            outline: 1900px solid #FFB1B1;
         }
-        &.active{
-            outline: 1900px solid rgba(#FFB1B1, 0.706);
+
+        &.active {
+            outline: 1900px solid #FFB1B1;
         }
     }
 
     &.works-card--likeСenter {
         &:hover {
-            outline: 1900px solid rgba(#F78F1E, 0.706);
+            outline: 1900px solid #F78F1E;
         }
-        &.active{
-            outline: 1900px solid rgba(#F78F1E, 0.706);
+
+        &.active {
+            outline: 1900px solid #F78F1E;
         }
     }
 
     &.works-card--36.6 {
         &:hover {
-            outline: 1900px solid rgba(#4374AE, 0.706);
+            outline: 1900px solid #4374AE;
         }
-        &.active{
-            outline: 1900px solid rgba(#4374AE, 0.706);
+
+        &.active {
+            outline: 1900px solid #4374AE;
         }
     }
 
     &.works-card--vanguard {
         &:hover {
-            outline: 1900px solid rgba(#E94D05, 0.706);
+            outline: 1900px solid #E94D05;
         }
-        &.active{
-            outline: 1900px solid rgba(#E94D05, 0.706);
+
+        &.active {
+            outline: 1900px solid #E94D05;
         }
     }
 
@@ -107,6 +117,7 @@
         z-index: 2;
         transition: 1s;
         scale: 1.1;
+        mix-blend-mode: plus-lighter;
 
         .works-card__inner {
             padding: 13px 24px 24px 24px;
@@ -118,10 +129,12 @@
             //   top: 10px;
             scale: 0.4;
             transition: 1s;
-            max-width: 60px;
+            width: fit-content;
+            max-width: 100px;
         }
 
         .works-card__header {
+            height: auto;
             display: flex;
             justify-content: space-between;
             height: 40px;
@@ -147,12 +160,25 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            background-image: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
+            background-image: linear-gradient(180deg,  rgba(25, 25, 25, 0.7) 0%, #191919 100%);
             z-index: 1;
+        }
+        &  .works-card__open{
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
         }
     }
 
+    // .works-card__open
+    &__open {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%, 150%);
+        transition: 0.5s;
+        z-index: 5;
 
+    }
 
     // .works-card__inner
 
@@ -167,8 +193,9 @@
     // .works-card__header
 
     &__header {
+        height: 100%;
         margin-bottom: rem-calc(8);
-     
+
     }
 
     // .works-card__img
@@ -190,7 +217,7 @@
         scale: 1;
         transition: 1s;
         max-width: 100%;
-     
+
     }
 
     // .works-card__items
@@ -200,7 +227,7 @@
         justify-content: flex-end;
         visibility: hidden;
         transform: translateY(-40px);
-      
+
 
     }
 
@@ -221,7 +248,7 @@
         color: #E5DCD7;
         transform: translateY(100px);
         transition: 1s;
-     
+
 
     }
 
@@ -249,7 +276,8 @@
 }
 
 .works-card-item {
-    padding: 10px;
+    height: 25px;
+    padding: 0 10px;
 
     background: rgba(255, 255, 255, 0.05);
     border-radius: 100px;
@@ -269,7 +297,8 @@
 }
 
 .works-card-data {
-    padding: 10px;
+    height: 25px;
+    padding: 0 10px;
 
     background: rgba(255, 255, 255, 0.05);
     border-radius: 100px;
@@ -287,7 +316,8 @@
     color: #FFFFFF;
     margin-right: 4px;
 }
-.works-card-test{
+
+.works-card-test {
     position: absolute;
     left: 0;
     top: 0;
@@ -296,6 +326,7 @@
     background-color: transparent;
     z-index: 44;
 }
+
 @media (min-width: 480px) {}
 
 @media (min-width: 768px) {}

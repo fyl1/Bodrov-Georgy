@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalOverlay = document.querySelectorAll('.modal-wrapper');
   const modals = document.querySelectorAll('.modal');
   const btnСloseModal = document.querySelectorAll('.btn--close-modal');
-
+  const body = document.querySelector('.body');
+  const anchors = document.querySelectorAll('a[href*="#"]')
   var swiper = new Swiper(".swiper-container_1", {
     spaceBetween: 30,
     slidesPerView: 3,
@@ -69,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       console.log(`[data-target="${path}"]`, "[data-target=path]");
       document.querySelector(`[data-target="${path}"]`).classList.add('modal--open');
-
+      body.classList.add('active');
     });
   });
 
@@ -80,8 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
         el.classList.remove('modal--open');
         el.classList.remove('active');
       });
-      el.classList.remove('modal--open');
-      el.classList.remove('active');
+      modalBtns.forEach((el) => {
+        el.classList.remove('active');
+      });
+      body.classList.remove('active');
 
 
     });
@@ -89,14 +92,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   modals.forEach((el) => {
     el.addEventListener('click', (e) => {
+
       if (e.currentTarget.classList.contains !== "modal-wrapper") {
+        modalBtns.forEach((el) => {
+          el.classList.remove('active');
+        });
         modals.forEach((el) => {
           console.log(el, "el e.currentTarget.classList.contains")
           el.classList.remove('modal--open');
-          el.classList.remove('active');
+        
         });
-        el.classList.remove('modal--open');
-        el.classList.remove('active');
+        body.classList.remove('active');
       }
 
     });
@@ -118,4 +124,18 @@ document.addEventListener('DOMContentLoaded', function () {
   // 	}
   // });
   // });
+
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 }, false);

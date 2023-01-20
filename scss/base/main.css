@@ -128,6 +128,11 @@ button:active {
 body {
   background-color: black;
   position: relative;
+  overflow: inherit;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 h1 {
@@ -207,6 +212,7 @@ a {
   color: #FFFFFF;
   background: #3D3D3D;
   border-radius: 24px;
+  padding: 3px 0;
 }
 
 .hard-skills {
@@ -219,6 +225,7 @@ a {
   background: #FFAE1B;
   border-radius: 24px;
   text-transform: uppercase;
+  padding: 3px 0;
 }
 
 @media (max-width: 767px) {
@@ -245,10 +252,18 @@ a {
   margin-right: 2.75rem;
   font-family: 'Manrope', sans-serif;
   text-transform: uppercase;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .menu__link:last-child {
   margin-right: 0;
+}
+
+.menu__link:hover {
+  color: #FFAE1B;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 @media (max-width: 767px) {
@@ -404,7 +419,6 @@ a {
 
 .skills-card__uptitle {
   width: 94px;
-  padding: 0.1875rem 0;
   background: #3D3D3D;
   border-radius: 1.5rem;
   display: -webkit-box;
@@ -846,67 +860,67 @@ a {
 }
 
 .works-card.works-card--Alibaba:hover {
-  outline: 1900px solid rgba(251, 99, 34, 0.706);
+  outline: 1900px solid #FB6322;
 }
 
 .works-card.works-card--Alibaba.active {
-  outline: 1900px solid rgba(251, 99, 34, 0.706);
+  outline: 1900px solid #FB6322;
 }
 
 .works-card.works-card--knowledge:hover {
-  outline: 1900px solid rgba(82, 137, 235, 0.706);
+  outline: 1900px solid #5289EB;
 }
 
 .works-card.works-card--knowledge.active {
-  outline: 1900px solid rgba(82, 137, 235, 0.706);
+  outline: 1900px solid #5289EB;
 }
 
 .works-card.works-card--x5:hover {
-  outline: 1900px solid rgba(247, 143, 30, 0.706);
+  outline: 1900px solid #F78F1E;
 }
 
 .works-card.works-card--x5.active {
-  outline: 1900px solid rgba(247, 143, 30, 0.706);
+  outline: 1900px solid #F78F1E;
 }
 
 .works-card.works-card--wo:hover {
-  outline: 1900px solid rgba(251, 216, 28, 0.706);
+  outline: 1900px solid #FBD81C;
 }
 
 .works-card.works-card--wo.active {
-  outline: 1900px solid rgba(251, 216, 28, 0.706);
+  outline: 1900px solid #FBD81C;
 }
 
 .works-card.works-card--pyaterochka:hover {
-  outline: 1900px solid rgba(255, 177, 177, 0.706);
+  outline: 1900px solid #FFB1B1;
 }
 
 .works-card.works-card--pyaterochka.active {
-  outline: 1900px solid rgba(255, 177, 177, 0.706);
+  outline: 1900px solid #FFB1B1;
 }
 
 .works-card.works-card--likeСenter:hover {
-  outline: 1900px solid rgba(247, 143, 30, 0.706);
+  outline: 1900px solid #F78F1E;
 }
 
 .works-card.works-card--likeСenter.active {
-  outline: 1900px solid rgba(247, 143, 30, 0.706);
+  outline: 1900px solid #F78F1E;
 }
 
 .works-card.works-card--36.6:hover {
-  outline: 1900px solid rgba(67, 116, 174, 0.706);
+  outline: 1900px solid #4374AE;
 }
 
 .works-card.works-card--36.6.active {
-  outline: 1900px solid rgba(67, 116, 174, 0.706);
+  outline: 1900px solid #4374AE;
 }
 
 .works-card.works-card--vanguard:hover {
-  outline: 1900px solid rgba(233, 77, 5, 0.706);
+  outline: 1900px solid #E94D05;
 }
 
 .works-card.works-card--vanguard.active {
-  outline: 1900px solid rgba(233, 77, 5, 0.706);
+  outline: 1900px solid #E94D05;
 }
 
 .works-card:hover {
@@ -914,6 +928,7 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   scale: 1.1;
+  mix-blend-mode: plus-lighter;
 }
 
 .works-card:hover .works-card__inner {
@@ -924,10 +939,14 @@ a {
   scale: 0.4;
   -webkit-transition: 1s;
   transition: 1s;
-  max-width: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100px;
 }
 
 .works-card:hover .works-card__header {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,9 +977,27 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(#191919));
-  background-image: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0.7)), to(#191919));
+  background-image: linear-gradient(180deg, rgba(25, 25, 25, 0.7) 0%, #191919 100%);
   z-index: 1;
+}
+
+.works-card:hover .works-card__open {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.works-card__open {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  -webkit-transform: translate(-50%, 150%);
+          transform: translate(-50%, 150%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 5;
 }
 
 .works-card__inner {
@@ -973,6 +1010,7 @@ a {
 }
 
 .works-card__header {
+  height: 100%;
   margin-bottom: 0.5rem;
 }
 
@@ -1050,7 +1088,8 @@ a {
 }
 
 .works-card-item {
-  padding: 10px;
+  height: 25px;
+  padding: 0 10px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 100px;
   font-family: 'Manrope';
@@ -1068,7 +1107,8 @@ a {
 }
 
 .works-card-data {
-  padding: 10px;
+  height: 25px;
+  padding: 0 10px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 100px;
   font-family: 'Manrope';
