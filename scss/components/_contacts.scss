@@ -29,8 +29,14 @@ background-color: #FFAE1B;
     
         color:#ffffff;
         margin-bottom: rem-calc(109);
+       
         a{
             color: #ffffff;
+            transition:1s;
+            &:hover{
+              color: black;
+              transition: 1s;
+            }
         }
     }
 

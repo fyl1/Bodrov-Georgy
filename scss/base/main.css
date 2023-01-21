@@ -519,6 +519,14 @@ a {
 
 .contacts__title a {
   color: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contacts__title a:hover {
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .contacts__img {
@@ -753,8 +761,8 @@ a {
   line-height: 22px;
   list-style-type: disc;
   /* or 157% */
-  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
-          font-feature-settings: 'pnum' on, 'lnum' on;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
   color: #FFFFFF;
 }
 
@@ -787,7 +795,9 @@ a {
 }
 
 .modal-rezult__li {
+  list-style-type: disc;
   padding-bottom: 2.5625rem;
+  color: #FFFFFF;
 }
 
 .modal-rezult__li h2 {
@@ -863,6 +873,20 @@ a {
   outline: 1900px solid #FB6322;
 }
 
+.works-card.works-card--Alibaba:hover .works-card__logo {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 50px;
+}
+
+.works-card.works-card--Alibaba:hover .works-card__logo svg {
+  min-width: 180px;
+  fill: #FB6322;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .works-card.works-card--Alibaba.active {
   outline: 1900px solid #FB6322;
 }
@@ -883,20 +907,28 @@ a {
   outline: 1900px solid #F78F1E;
 }
 
-.works-card.works-card--wo:hover {
+.works-card.works-card--uralsib:hover {
   outline: 1900px solid #FBD81C;
+}
+
+.works-card.works-card--uralsib.active {
+  outline: 1900px solid #FBD81C;
+}
+
+.works-card.works-card--wo:hover {
+  outline: 1900px solid #FFB1B1;
 }
 
 .works-card.works-card--wo.active {
-  outline: 1900px solid #FBD81C;
+  outline: 1900px solid #FFB1B1;
 }
 
 .works-card.works-card--pyaterochka:hover {
-  outline: 1900px solid #FFB1B1;
+  outline: 1900px solid #F78F1E;
 }
 
 .works-card.works-card--pyaterochka.active {
-  outline: 1900px solid #FFB1B1;
+  outline: 1900px solid #F78F1E;
 }
 
 .works-card.works-card--likeСenter:hover {
@@ -907,11 +939,11 @@ a {
   outline: 1900px solid #F78F1E;
 }
 
-.works-card.works-card--36.6:hover {
+.works-card.works-card--thirty-six:hover {
   outline: 1900px solid #4374AE;
 }
 
-.works-card.works-card--36.6.active {
+.works-card.works-card--thirty-six.active {
   outline: 1900px solid #4374AE;
 }
 
@@ -921,6 +953,30 @@ a {
 
 .works-card.works-card--vanguard.active {
   outline: 1900px solid #E94D05;
+}
+
+.works-card.works-card--Gravion:hover {
+  outline: 1900px solid #4F5F79;
+}
+
+.works-card.works-card--Gravion.active {
+  outline: 1900px solid #4F5F79;
+}
+
+.works-card.works-card--Gorzdrav:hover {
+  outline: 1900px solid #E94D05;
+}
+
+.works-card.works-card--Gorzdrav.active {
+  outline: 1900px solid #E94D05;
+}
+
+.works-card.works-card--Beauty-Maker:hover {
+  outline: 1900px solid #4374AE;
+}
+
+.works-card.works-card--Beauty-Maker.active {
+  outline: 1900px solid #4374AE;
 }
 
 .works-card:hover {
@@ -950,9 +1006,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 40px;
 }
 
@@ -1040,6 +1096,12 @@ a {
   max-width: 100%;
 }
 
+.works-card__logo svg {
+  fill: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .works-card__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1121,6 +1183,7 @@ a {
   text-transform: uppercase;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
+  white-space: nowrap;
   color: #FFFFFF;
   margin-right: 4px;
 }

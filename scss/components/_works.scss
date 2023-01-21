@@ -34,11 +34,25 @@
     &.works-card--Alibaba {
         &:hover {
             outline: 1900px solid #FB6322;
+
+            .works-card__logo {
+                position: absolute;
+                left: 0;
+                top: 10px;
+                height: 50px;
+                
+                svg {
+                   min-width: 180px;
+                    fill: #FB6322;
+                    transition: 1s;
+                }
+            }
         }
 
         &.active {
             outline: 1900px solid #FB6322;
         }
+
     }
 
     &.works-card--knowledge {
@@ -61,7 +75,7 @@
         }
     }
 
-    &.works-card--wo {
+    &.works-card--uralsib {
         &:hover {
             outline: 1900px solid #FBD81C;
         }
@@ -71,13 +85,23 @@
         }
     }
 
-    &.works-card--pyaterochka {
+    &.works-card--wo {
         &:hover {
             outline: 1900px solid #FFB1B1;
         }
 
         &.active {
             outline: 1900px solid #FFB1B1;
+        }
+    }
+
+    &.works-card--pyaterochka {
+        &:hover {
+            outline: 1900px solid #F78F1E;
+        }
+
+        &.active {
+            outline: 1900px solid #F78F1E;
         }
     }
 
@@ -91,7 +115,7 @@
         }
     }
 
-    &.works-card--36.6 {
+    &.works-card--thirty-six {
         &:hover {
             outline: 1900px solid #4374AE;
         }
@@ -111,6 +135,35 @@
         }
     }
 
+    &.works-card--Gravion {
+        &:hover {
+            outline: 1900px solid #4F5F79;
+        }
+
+        &.active {
+            outline: 1900px solid #4F5F79;
+        }
+    }
+
+    &.works-card--Gorzdrav {
+        &:hover {
+            outline: 1900px solid #E94D05;
+        }
+
+        &.active {
+            outline: 1900px solid #E94D05;
+        }
+    }
+
+    &.works-card--Beauty-Maker {
+        &:hover {
+            outline: 1900px solid #4374AE;
+        }
+
+        &.active {
+            outline: 1900px solid #4374AE;
+        }
+    }
 
     &:hover {
 
@@ -122,6 +175,7 @@
         .works-card__inner {
             padding: 13px 24px 24px 24px;
         }
+        
 
         & .works-card__logo {
             //   position: absolute;
@@ -136,7 +190,7 @@
         .works-card__header {
             height: auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             height: 40px;
         }
 
@@ -160,10 +214,11 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            background-image: linear-gradient(180deg,  rgba(25, 25, 25, 0.7) 0%, #191919 100%);
+            background-image: linear-gradient(180deg, rgba(25, 25, 25, 0.7) 0%, #191919 100%);
             z-index: 1;
         }
-        &  .works-card__open{
+
+        & .works-card__open {
             transform: translate(-50%, -50%);
             transition: 0.5s;
         }
@@ -217,6 +272,11 @@
         scale: 1;
         transition: 1s;
         max-width: 100%;
+
+        svg {
+            fill: #ffffff;
+            transition: 1s;
+        }
 
     }
 
@@ -312,7 +372,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     font-feature-settings: 'pnum'on, 'lnum'on;
-
+    white-space: nowrap;
     color: #FFFFFF;
     margin-right: 4px;
 }
