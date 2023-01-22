@@ -869,15 +869,12 @@ a {
   scale: 1;
 }
 
-.works-card.works-card--Alibaba:hover {
-  outline: 1900px solid #FB6322;
+.works-card.works-card--Alibaba .works-card__logo svg {
+  width: 180px;
 }
 
-.works-card.works-card--Alibaba:hover .works-card__logo {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  height: 50px;
+.works-card.works-card--Alibaba:hover {
+  outline: 1900px solid #FB6322;
 }
 
 .works-card.works-card--Alibaba:hover .works-card__logo svg {
@@ -899,16 +896,40 @@ a {
   outline: 1900px solid #5289EB;
 }
 
+.works-card.works-card--x5 .works-card__logo svg {
+  width: 254px;
+  height: 50px;
+}
+
 .works-card.works-card--x5:hover {
   outline: 1900px solid #F78F1E;
+}
+
+.works-card.works-card--x5:hover .works-card__logo svg {
+  min-width: 180px;
+  fill: #F78F1E;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--x5.active {
   outline: 1900px solid #F78F1E;
 }
 
+.works-card.works-card--uralsib .works-card__logo svg {
+  width: 254px;
+  height: 50px;
+}
+
 .works-card.works-card--uralsib:hover {
   outline: 1900px solid #FBD81C;
+}
+
+.works-card.works-card--uralsib:hover .works-card__logo svg {
+  min-width: 180px;
+  fill: #F78F1E;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--uralsib.active {
@@ -931,40 +952,112 @@ a {
   outline: 1900px solid #F78F1E;
 }
 
+.works-card.works-card--likeСenter .works-card__logo svg {
+  width: 155px;
+  height: 139px;
+}
+
 .works-card.works-card--likeСenter:hover {
   outline: 1900px solid #F78F1E;
+}
+
+.works-card.works-card--likeСenter:hover .works-card__logo svg {
+  min-width: 180px;
+  fill: #F78F1E;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--likeСenter.active {
   outline: 1900px solid #F78F1E;
 }
 
+.works-card.works-card--thirty-six .works-card__logo svg {
+  width: 157px;
+  height: 153px;
+}
+
 .works-card.works-card--thirty-six:hover {
   outline: 1900px solid #4374AE;
+}
+
+.works-card.works-card--thirty-six:hover .works-card__logo svg {
+  min-width: 180px;
+  fill: #4374AE;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--thirty-six.active {
   outline: 1900px solid #4374AE;
 }
 
+.works-card.works-card--vanguard .works-card__logo svg {
+  width: 191px;
+  height: 225px;
+}
+
 .works-card.works-card--vanguard:hover {
   outline: 1900px solid #E94D05;
+}
+
+.works-card.works-card--vanguard:hover .works-card__logo {
+  scale: 0.25;
+}
+
+.works-card.works-card--vanguard:hover .works-card__logo svg {
+  min-width: 185px;
+  height: 194px;
+  fill: #C3322B;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--vanguard.active {
   outline: 1900px solid #E94D05;
 }
 
+.works-card.works-card--Gravion .works-card__logo svg {
+  width: 165px;
+  height: 128px;
+}
+
 .works-card.works-card--Gravion:hover {
   outline: 1900px solid #4F5F79;
+}
+
+.works-card.works-card--Gravion:hover .works-card__logo {
+  scale: 0.30;
+}
+
+.works-card.works-card--Gravion:hover .works-card__logo svg {
+  min-width: 185px;
+  height: 194px;
+  fill: #4F5F79;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--Gravion.active {
   outline: 1900px solid #4F5F79;
 }
 
+.works-card.works-card--Gorzdrav .works-card__logo svg {
+  width: 133px;
+  height: 129px;
+  fill: transparent;
+}
+
 .works-card.works-card--Gorzdrav:hover {
   outline: 1900px solid #E94D05;
+}
+
+.works-card.works-card--Gorzdrav:hover .works-card__logo svg {
+  min-width: 185px;
+  height: 194px;
+  fill: #2CA180;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--Gorzdrav.active {
@@ -1006,9 +1099,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 40px;
 }
 
