@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const btnСloseModal = document.querySelectorAll('.btn--close-modal');
   const body = document.querySelector('.body');
   const anchors = document.querySelectorAll('a[href*="#"]')
+
   var swiper = new Swiper(".swiper-container_1", {
     spaceBetween: 30,
     slidesPerView: 3,
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       499: {
         slidesPerView: 6,
       },
-
+  
       999: {
         slidesPerView: 8,
       },
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       clickable: true,
     },
   });
-  var swiper = new Swiper(".swiper-container_2", {
+  var swiper = new Swiper(".swiper-container_1", {
     spaceBetween: 30,
     slidesPerView: 3,
     centeredSlides: true,
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       499: {
         slidesPerView: 6,
       },
-
+  
       999: {
         slidesPerView: 8,
       },
@@ -55,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
       clickable: true,
     },
   });
-  console.log(modals, "modals");
 
   modalBtns.forEach((el) => {
     console.log(el);
@@ -107,23 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
   });
-  document.addEventListener('click', e => console.log(e.target))
-  // document.addEventListener('click', (e) => {
-  // let ddd =  e.closest('.modal')
-  // console.log(ddd, "ddd");
-  // });
-  // modalOverlay.forEach((el) => {
-  //   el.addEventListener('click', (e) => {
-  // 	console.log(e.target);
 
-  // 	if (e.target == modalOverlay) {
-  // 		modalOverlay.classList.remove('modal-overlay--visible');
-  // 		modals.forEach((el) => {
-  // 			el.classList.remove('modal--visible');
-  // 		});
-  // 	}
-  // });
-  // });
 
 
 for (let anchor of anchors) {
