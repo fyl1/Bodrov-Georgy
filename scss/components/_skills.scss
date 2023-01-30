@@ -134,8 +134,17 @@ opacity: 0.6;
           ". .  "
           ". .  "; 
     }
+    
+
+    .skills__inner {
+        padding: rem-calc(120 0 90 0);
+    }
 }
 @media (max-width: 767px) {
+    
+    .skills__inner {
+        padding: rem-calc(70 0 60 0);
+    }
 }
 @media (max-width: 579px) {
     .skills__items{

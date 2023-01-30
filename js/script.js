@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       clickable: true,
     },
   });
-  var swiper = new Swiper(".swiper-container_1", {
+  var swiper1 = new Swiper(".swiper-container_2", {
     spaceBetween: 30,
     slidesPerView: 3,
     centeredSlides: true,
@@ -58,17 +58,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   modalBtns.forEach((el) => {
-    console.log(el);
 
     el.addEventListener('click', (e) => {
-      console.log(e.target, "e.target", e.currentTarget.getAttribute('data-path'));
+      // console.log(e.target, "e.target", e.currentTarget.getAttribute('data-path'));
 
       let path = e.currentTarget.getAttribute('data-path');
       el.classList.add('active')
       modals.forEach((el) => {
         el.classList.remove('modal--open');
       });
-      console.log(`[data-target="${path}"]`, "[data-target=path]");
+      console.log(`[data-target="${path}"]`, "[data-target=path]",  e.currentTarget.getAttribute('data-path'), " e.currentTarget.getAttribute('data-path')");
       document.querySelector(`[data-target="${path}"]`).classList.add('modal--open');
       body.classList.add('active');
     });
@@ -76,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   btnСloseModal.forEach((el) => {
     el.addEventListener('click', (e) => {
-      console.log(el, "el btnСloseModal")
+      // console.log(el, "el btnСloseModal")
       modals.forEach((el) => {
         el.classList.remove('modal--open');
         el.classList.remove('active');
@@ -98,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
           el.classList.remove('active');
         });
         modals.forEach((el) => {
-          console.log(el, "el e.currentTarget.classList.contains")
+          // console.log(el, "el e.currentTarget.classList.contains")
           el.classList.remove('modal--open');
         
         });

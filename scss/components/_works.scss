@@ -27,7 +27,7 @@
     border-radius: rem-calc(24);
     max-height: rem-calc(265);
     z-index: 1;
-    transition: 1s;
+    // transition: 1s;
     outline: 0px solid;
     scale: 1;
 
@@ -517,6 +517,9 @@
             ". . "
             ". . ";
     }
+    .works__inner{
+        padding-top: 120px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -529,6 +532,9 @@
             ". "
             ". "
             ". ";
+    }
+    .works__inner{
+        padding-top: 70px;
     }
 }
 
