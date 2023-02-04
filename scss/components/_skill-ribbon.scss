@@ -1,6 +1,12 @@
 .skill-ribbon {
+    position: relative;
+    z-index: 3;
     height: 40px;
     background-color: #FFAE1B;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 
     // .skill-ribbon--second
     &--second {
@@ -8,12 +14,20 @@
 
         .skill-ribbon__item {
             color: #FFAE1B;
+            
+  
+          
         }
     }
 
     // .skill-ribbon__inner
 
-    &__inner {}
+    &__inner {
+        display: inline-block;
+        -webkit-animation: scroll 20s infinite linear;
+        -moz-animation: scroll 20s infinite linear;
+        animation: scroll 20s infinite linear;
+    }
 
     // .skill-ribbon__item
 
@@ -34,10 +48,43 @@
 
         span {
             margin-left: rem-calc(40);
+            padding-right: 10px;
+        
         }
     }
 }
 
+ 
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
 @media (min-width: 480px) {}
 
 @media (min-width: 768px) {}

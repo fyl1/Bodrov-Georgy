@@ -234,6 +234,14 @@ a {
   }
 }
 
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,8 +345,14 @@ a {
 }
 
 .skill-ribbon {
+  position: relative;
+  z-index: 3;
   height: 40px;
   background-color: #FFAE1B;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .skill-ribbon--second {
@@ -347,6 +361,12 @@ a {
 
 .skill-ribbon--second .skill-ribbon__item {
   color: #FFAE1B;
+}
+
+.skill-ribbon__inner {
+  display: inline-block;
+  -webkit-animation: scroll 20s infinite linear;
+  animation: scroll 20s infinite linear;
 }
 
 .skill-ribbon__item {
@@ -367,6 +387,29 @@ a {
 
 .skill-ribbon__item span {
   margin-left: 2.5rem;
+  padding-right: 10px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
 }
 
 @media (max-width: 767px) {
@@ -382,7 +425,7 @@ a {
 }
 
 .skills__inner {
-  padding: 12.5rem 0 6.875rem 0;
+  padding: 6.25rem 0 6.875rem 0;
 }
 
 .skills__title {
@@ -958,8 +1001,13 @@ a {
           box-sizing: border-box;
 }
 
+.works {
+  overflow: hidden;
+}
+
 .works__inner {
   padding-top: 195px;
+  padding-bottom: 100px;
 }
 
 .works__items {
@@ -982,6 +1030,7 @@ a {
   z-index: 1;
   outline: 0px solid;
   scale: 1;
+  cursor: pointer;
 }
 
 .works-card.works-card--Alibaba .works-card__logo svg {
@@ -1012,7 +1061,7 @@ a {
 }
 
 .works-card.works-card--x5 .works-card__logo svg {
-  width: 254px;
+  width: 285px;
   height: 50px;
 }
 
@@ -1020,8 +1069,12 @@ a {
   outline: 1900px solid #F78F1E;
 }
 
+.works-card.works-card--x5:hover .works-card__logo {
+  max-width: 110px;
+}
+
 .works-card.works-card--x5:hover .works-card__logo svg {
-  min-width: 180px;
+  min-width: 280px;
   fill: #F78F1E;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1041,7 +1094,7 @@ a {
 }
 
 .works-card.works-card--uralsib:hover .works-card__logo svg {
-  min-width: 180px;
+  min-width: 245px;
   fill: #F78F1E;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1069,11 +1122,15 @@ a {
 
 .works-card.works-card--likeСenter .works-card__logo svg {
   width: 155px;
-  height: 139px;
+  height: 145px;
 }
 
 .works-card.works-card--likeСenter:hover {
   outline: 1900px solid #F78F1E;
+}
+
+.works-card.works-card--likeСenter:hover .works-card__logo {
+  scale: 0.35;
 }
 
 .works-card.works-card--likeСenter:hover .works-card__logo svg {
@@ -1094,6 +1151,10 @@ a {
 
 .works-card.works-card--thirty-six:hover {
   outline: 1900px solid #4374AE;
+}
+
+.works-card.works-card--thirty-six:hover .works-card__logo {
+  scale: 0.35;
 }
 
 .works-card.works-card--thirty-six:hover .works-card__logo svg {
@@ -1143,6 +1204,7 @@ a {
 
 .works-card.works-card--Gravion:hover .works-card__logo {
   scale: 0.30;
+  height: 60px;
 }
 
 .works-card.works-card--Gravion:hover .works-card__logo svg {
@@ -1169,7 +1231,7 @@ a {
 
 .works-card.works-card--Gorzdrav:hover .works-card__logo svg {
   min-width: 185px;
-  height: 194px;
+  height: 141px;
   fill: #2CA180;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1189,8 +1251,8 @@ a {
 
 .works-card:hover {
   z-index: 2;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   scale: 1.1;
   mix-blend-mode: plus-lighter;
 }
@@ -1406,6 +1468,20 @@ a {
   z-index: 44;
 }
 
+@media (max-width: 1199px) {
+  .works-card:hover .works-card__inner {
+    padding: 14px;
+  }
+  .works-card-item {
+    padding: 0 5px;
+    font-size: 9px;
+  }
+  .works-card-data {
+    padding: 0 5px;
+    font-size: 9px;
+  }
+}
+
 @media (max-width: 991px) {
   .works__items {
     -ms-grid-columns: 1fr 1fr;
@@ -1417,6 +1493,7 @@ a {
   }
   .works__inner {
     padding-top: 120px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1431,6 +1508,7 @@ a {
   }
   .works__inner {
     padding-top: 70px;
+    padding-bottom: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */
