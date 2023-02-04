@@ -365,8 +365,8 @@ a {
 
 .skill-ribbon__inner {
   display: inline-block;
-  -webkit-animation: scroll 20s infinite linear;
-  animation: scroll 20s infinite linear;
+  -webkit-animation: scroll 25s infinite linear;
+          animation: scroll 25s infinite linear;
 }
 
 .skill-ribbon__item {
@@ -484,8 +484,8 @@ a {
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
-  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
-          font-feature-settings: 'pnum' on, 'lnum' on;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
   color: #E5DCD7;
   padding-bottom: 1rem;
 }
