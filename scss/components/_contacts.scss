@@ -87,8 +87,14 @@ background-color: #FFAE1B;
     }
   }
 @media (max-width: 767px) {
+  .contacts__inner{
+    padding: 0;
+  }
 }
 @media (max-width: 579px) {
+  .contacts__title{
+    font-size: rem-calc(40);
+  }
 }
 @media (max-width: 479px) {
 }

@@ -371,7 +371,7 @@ cursor: pointer;
         justify-content: center;
 
         img {
-            width: fit-content;
+            width: 100%;
         }
     }
 
@@ -510,9 +510,20 @@ cursor: pointer;
 
 @media (min-width: 1786px) {}
 
-@media (max-width: 1399px) {}
+@media (max-width: 1399px) {
+    .works-card__items{
+        flex-wrap: wrap;
+        min-width: 210px;
+    }
+    .works-card-item{
+        margin-bottom: 5px;
+    }
+}
 
 @media (max-width: 1199px) {
+    .works-card__items{
+        min-width: 150px;
+    }
     .works-card:hover  .works-card__inner{
         padding: 14px;
     }
@@ -525,6 +536,9 @@ cursor: pointer;
 }
 
 @media (max-width: 991px) {
+    .works-card__items{
+        min-width: 150px;
+    }
     .works__items {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
