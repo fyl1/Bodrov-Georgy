@@ -1,5 +1,7 @@
 .intro {
   overflow: hidden;
+  position: relative;
+  
   // .intro__inner
 
   &__inner {
@@ -11,15 +13,21 @@
   &__img {
     width: fit-content;
     margin: 0 auto;
+    position: relative;
+    z-index: 4;
   }
 
   //   .intro__img--cto
   &__img--cto {
     padding-bottom: rem-calc(20);
+    position: relative;
+    z-index: 4;
   }
  //   .intro__img--mac 
   &__img--mac {
     margin-bottom: -5px;
+    position: relative;
+    z-index: 4;
   }
 
   // .intro__title
@@ -33,6 +41,8 @@
     text-align: center;
 
     color: $main-color;
+    position: relative;
+    z-index: 4;
   }
 
   // .intro__subtitle
@@ -43,6 +53,8 @@
     padding: rem-calc(35 0 44 0);
     text-align: center;
     color: #ffffff;
+    position: relative;
+    z-index: 4;
   }
 }
 

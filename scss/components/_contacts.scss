@@ -1,4 +1,5 @@
-.contacts {
+.contacts {  position: relative;
+  z-index: 4;
     overflow: hidden;
 background-color: #FFAE1B;
     // .contacts__inner

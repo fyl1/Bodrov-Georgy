@@ -1,5 +1,7 @@
 .works {
     overflow: hidden;
+    position: relative;
+    z-index: 4;
     // .works__inner
 
     &__inner {
@@ -10,6 +12,8 @@
     // .works__items
 
     &__items {
+        position: relative;
+        z-index: 4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -25,10 +29,11 @@
 .works-card {
     overflow: hidden;
     position: relative;
-    background-color: #1a1a1a;
+    // background-color: #1a1a1a;
+    background-color: rgba(2,2,2,0.3);
     border-radius: rem-calc(24);
     max-height: rem-calc(265);
-    z-index: 1;
+    z-index: 4;
     // transition: 1s;
     outline: 0px solid;
     scale: 1;
