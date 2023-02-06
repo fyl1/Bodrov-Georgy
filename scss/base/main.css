@@ -1174,7 +1174,7 @@ a {
 .works-card {
   overflow: hidden;
   position: relative;
-  background-color: rgba(2, 2, 2, 0.3);
+  background-color: #1a1a1a;
   border-radius: 1.5rem;
   max-height: 16.5625rem;
   z-index: 4;

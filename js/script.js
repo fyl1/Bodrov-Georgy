@@ -134,14 +134,14 @@ setTimeout(() => {
       PRESSURE_DISSIPATION: .8,
       PRESSURE_ITERATIONS: 20,
       CURL: 30,
-      SPLAT_RADIUS: .008,
+      SPLAT_RADIUS: .08,
       SHADING: !0,
       COLORFUL: !0,
       PAUSED: !1,
       BACK_COLOR: {
-          r: 15,
-          g: 15,
-          b: 15
+          r: 0,
+          g: 0,
+          b: 0,
       },
       TRANSPARENT: !1,
       BLOOM: !0,
