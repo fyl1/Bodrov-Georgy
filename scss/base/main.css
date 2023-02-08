@@ -705,6 +705,9 @@ a {
     gap: 2.5rem;
         grid-template-areas: ". . . " ". . . " ". . . ";
   }
+  .skills__items .skills-card {
+    margin: 0 0 0 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -929,8 +932,8 @@ a {
   background-color: #1E1E1E;
   padding: 0.875rem 1.875rem 0 1.875rem;
   max-width: 90vw;
-  width: 80%;
-  max-height: 90vh;
+  width: 93%;
+  max-height: 91vh;
   border-radius: 20px;
   text-align: center;
   overflow: auto;
