@@ -887,7 +887,6 @@ a {
   bottom: 0;
   right: 0;
   padding: 30px 30px 0 30px;
-  background-color: #80808070;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -897,15 +896,17 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   pointer-events: none;
   opacity: 0;
   z-index: 999;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  -webkit-transform: translate(0, 3000px);
+          transform: translate(0, 3000px);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
 ::-webkit-scrollbar {
@@ -919,12 +920,12 @@ a {
 .modal--open {
   pointer-events: auto;
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  -webkit-transform: translate(0, 0px);
+          transform: translate(0, 0px);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
 .modal-wrapper {
@@ -1386,8 +1387,6 @@ a {
 }
 
 .works__items {
-  position: relative;
-  z-index: 4;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -1404,7 +1403,7 @@ a {
   background-color: #1a1a1a;
   border-radius: 1.5rem;
   max-height: 16.5625rem;
-  z-index: 4;
+  z-index: 1;
   outline: 0px solid;
   scale: 1;
   cursor: pointer;

@@ -11,8 +11,6 @@
     // .works__items
 
     &__items {
-        position: relative;
-        z-index: 4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -32,7 +30,7 @@
     // background-color: rgba(2,2,2,0.3);
     border-radius: rem-calc(24);
     max-height: rem-calc(265);
-    z-index: 4;
+    z-index: 1;
     // transition: 1s;
     outline: 0px solid;
     scale: 1;
