@@ -2,12 +2,13 @@ body{
   background-color: black;
   position: relative;
   overflow: inherit;
+  font-family: $fon-M;
 }
 body.active{
   overflow: hidden;
 }
 h1 {
-  font-family: 'Urbanist', sans-serif;
+  font-family: $fon-U;
   font-weight: 700;
   font-size: 5.1vw;
   line-height: 1.2;
@@ -15,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Urbanist', sans-serif;
+  font-family: $fon-U;
   font-weight: 700;
   font-size: 3.1vw;
   line-height: 1.3;
@@ -35,6 +36,7 @@ input {
 
 a {
   cursor: pointer;
+  scroll-behavior: smooth;
 }
 
 .main input:hover,
@@ -62,19 +64,19 @@ a {
   display: block !important;
 }
 .subtext{
-  font-family: 'Manrope',  sans-serif;
+  font-family: $fon-M;
 font-weight: 400;
 font-size: rem-calc(20);
 line-height: 150%;
 color: #E5DCD7;
 }
 .text-second{
-  font-family: 'Manrope',  sans-serif;
+  font-family:$fon-M;
   font-weight: 800;
 }
 .soft-skills{
   width: 100%;
-font-family: 'Manrope';
+font-family: $fon-M;
 font-style: normal;
 font-weight: 700;
 font-size: rem-calc(10);

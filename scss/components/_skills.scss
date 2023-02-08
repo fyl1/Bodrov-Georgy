@@ -3,14 +3,15 @@
     // .skills__inner
 
     &__inner {
-        padding: rem-calc(100 0 110 0);
+        padding: rem-calc(95 0 200 0);
     }
 
     // .skills__title
 
-    &__title {    position: relative;
+    &__title {
+        position: relative;
         z-index: 4;
-        font-family: 'Urbanist';
+        font-family: $fon-U;
         font-style: normal;
         font-weight: 800;
         font-size: 80px;
@@ -35,16 +36,91 @@
             ". . . ."
             ". . . ."
             ". . . .";
+
+
     }
 }
 
 .container {}
 
 .skills-card {
+    height: fit-content;
     position: relative;
     z-index: 4;
     border: 1px solid #2E2E2E;
     border-radius: 24px;
+
+    &:nth-child(1) {
+        align-self: start;
+
+
+    }
+
+    &:nth-child(2) {
+        align-self: end;
+        margin-bottom: -70px;
+
+    }
+
+    &:nth-child(3) {
+        align-self: start;
+
+    }
+
+    &:nth-child(4) {
+        align-self: end;
+        margin-bottom: -34px;
+
+    }
+
+    &:nth-child(5) {
+        align-self: start;
+        // margin-top: -20px;
+
+    }
+
+    &:nth-child(6) {
+        align-self: center;
+        margin-bottom: -43px;
+    }
+
+    &:nth-child(7) {
+        align-self: start;
+
+    }
+
+    &:nth-child(8) {
+        align-self: center;
+        margin-bottom: -12px;
+    }
+
+    &:nth-child(9) {
+        align-self: start;
+        margin-top: -87px;
+    }
+
+    &:nth-child(10) {
+        align-self: start;
+        margin-top: -30px;
+
+    }
+
+    &:nth-child(11) {
+        align-self: start;
+
+    }
+
+    &:nth-child(12) {
+        align-self: start;
+        margin-top: -20px;
+
+    }
+
+    &:nth-child(13) {
+        align-self: start;
+
+    }
+
     // .skills-card__inner
 
     &__inner {
@@ -65,13 +141,14 @@
         justify-content: center;
         align-items: center;
         margin-top: -42px;
+        margin-left: -10px;
         margin-bottom: rem-calc(19);
     }
 
     // .skills-card__title
 
     &__title {
-        font-family: 'Manrope';
+        font-family: $fon-M;
         font-style: normal;
         font-weight: 800;
         font-size: 16px;
@@ -87,7 +164,7 @@
     // .skills-card__text
 
     &__text {
-        font-family: 'Manrope';
+        font-family: $fon-M;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -119,6 +196,7 @@
 
 @media (max-width: 1199px) {
     .skills__items {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
         gap: rem-calc(40);

@@ -37,7 +37,7 @@ z-index: 99;
     line-height: rem-calc(24);
     color: #ffffff;
     margin-right: rem-calc(44);
-    font-family: 'Manrope', sans-serif;
+    font-family: $fon-M;
     text-transform: uppercase;
     transition: 0.6s;
     &:last-child{

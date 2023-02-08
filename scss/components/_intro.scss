@@ -1,11 +1,17 @@
 .intro {
   overflow: hidden;
   position: relative;
-  
+  height: 100vh;
+
   // .intro__inner
 
   &__inner {
-    padding: rem-calc(84 0 0 0);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding:18vh 0 0 0 ;
   }
 
   // .intro__img
@@ -19,15 +25,55 @@
 
   //   .intro__img--cto
   &__img--cto {
-    padding-bottom: rem-calc(20);
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+
+box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 8px;
     position: relative;
     z-index: 4;
+    margin-bottom: 4vh;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      left: 50%;
+      bottom: -5px;
+      transform: rotate(45deg) translate(-42%, 48%);
+      background: #FFFFFF;
+    }
+
+    span {
+      font-family: $fon-M;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 150%;
+      /* identical to box height, or 24px */
+
+      text-align: center;
+      font-feature-settings: 'pnum'on, 'lnum'on;
+
+      color: #000000;
+
+    }
   }
- //   .intro__img--mac 
+  // 
+
+  //   .intro__img--mac 
   &__img--mac {
+    display: flex;
+    height: 32vh;
     margin-bottom: -5px;
     position: relative;
     z-index: 4;
+    img{
+      height: 32vh;
+    }
   }
 
   // .intro__title
@@ -35,7 +81,7 @@
   &__title {
     font-family: "Urbanist", sans-serif;
     font-weight: 700;
-    font-size: rem-calc(120);
+    font-size: 15vh;
     line-height: 100%;
 
     text-align: center;
@@ -58,40 +104,49 @@
   }
 }
 
+.intro__footer{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
 .title {}
 
 .subtext {}
-@media (min-width: 480px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 1100px) {
- 
-}
-@media (min-width: 1240px) {
-}
 
-@media (min-width: 1686px) {
-}
-@media (min-width: 1786px) {
-}
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1100px) {}
+
+@media (min-width: 1240px) {}
+
+@media (min-width: 1686px) {}
+
+@media (min-width: 1786px) {}
+
 @media (max-width: 1199px) {
-  .intro__title{
+  .intro__title {
     font-size: rem-calc(90);
   }
 }
+
 @media (max-width: 991px) {
-  .intro__title{
+  .intro{
+    height: auto;
+  }
+  .intro__title {
     font-size: rem-calc(60);
   }
 }
-@media (max-width: 767px) {
-}
-@media (max-width: 579px) {
-}
-@media (max-width: 479px) {
-}
-@media (max-width: 379px) {
-}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 579px) {}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 379px) {}

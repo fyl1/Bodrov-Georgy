@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const modals = document.querySelectorAll('.modal');
   const btnСloseModal = document.querySelectorAll('.btn--close-modal');
   const body = document.querySelector('.body');
-  const anchors = document.querySelectorAll('a[href*="#"]')
+  const anchors = document.querySelectorAll('.link-transition')
 
   // var swiper = new Swiper(".swiper-container_1", {
   //   spaceBetween: 30,
