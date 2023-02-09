@@ -770,7 +770,7 @@ a {
 .contacts__subtitle {
   max-width: 35rem;
   margin: 0 auto;
-  padding: 2.1875rem 0 3.75rem 0;
+  padding: 4vh 0 8vh 0;
   text-align: center;
   color: #000000;
 }
@@ -903,10 +903,10 @@ a {
   z-index: 999;
   -webkit-transform: translate(0, 3000px);
           transform: translate(0, 3000px);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: opacity 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
 ::-webkit-scrollbar {
@@ -922,22 +922,24 @@ a {
   opacity: 1;
   -webkit-transform: translate(0, 0px);
           transform: translate(0, 0px);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-  transition: transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.6s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.6s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.6s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 1.6s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 1.6s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
 .modal-wrapper {
   position: relative;
   background-color: #1E1E1E;
   padding: 0.875rem 1.875rem 0 1.875rem;
-  max-width: 90vw;
+  max-width: 93vw;
   width: 93%;
   max-height: 91vh;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   text-align: center;
   overflow: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-overflow-style: none;
   /* IE 10+ */
   scrollbar-width: none;
@@ -1040,6 +1042,11 @@ a {
 }
 
 .modal__header {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1047,6 +1054,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 2.5rem;
+  z-index: 9;
 }
 
 .modal__data {
@@ -1144,10 +1152,24 @@ a {
   right: 2rem;
   top: 1.875rem;
   background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  z-index: 9;
+  cursor: pointer;
 }
 
-.btn--close-modal img {
-  pointer-events: none;
+.btn--close-modal svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btn--close-modal:hover svg {
+  fill: #FFAE1B;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .modal-intro {
@@ -1204,10 +1226,19 @@ a {
 .modal-intro__img {
   margin-right: -30px;
   border-radius: 2.5rem 0 0 2.5rem;
+  overflow-x: hidden;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+  -webkit-perspective-origin: center top;
+          perspective-origin: center top;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .modal-intro__img img {
   border-radius: 1.875rem 0 0 1.875rem;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .modal-rezult {
@@ -1223,6 +1254,21 @@ a {
   line-height: 76px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.modal-rezult__img {
+  overflow-x: hidden;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+  -webkit-perspective-origin: center top;
+          perspective-origin: center top;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.modal-rezult__img img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .modal-rezult__list {
@@ -1274,6 +1320,14 @@ a {
   padding: 4.375rem 0 10.625rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.modal-contact__link a:hover {
+  color: #FFAE1B;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .modal.modal--open .modal__logo {
@@ -1409,243 +1463,10 @@ a {
   cursor: pointer;
 }
 
-.works-card.works-card--Alibaba .works-card__logo svg {
-  width: 180px;
-}
-
-.works-card.works-card--Alibaba:hover {
-  outline: 1900px solid #FB6322;
-}
-
-.works-card.works-card--Alibaba:hover .works-card__logo svg {
-  min-width: 180px;
-  fill: #FB6322;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--Alibaba.active {
-  outline: 1900px solid #FB6322;
-}
-
-.works-card.works-card--knowledge .works-card__logo img {
-  width: 220px;
-}
-
-.works-card.works-card--knowledge:hover {
-  outline: 1900px solid #5289EB;
-}
-
-.works-card.works-card--knowledge.active {
-  outline: 1900px solid #5289EB;
-}
-
-.works-card.works-card--x5 .works-card__logo svg {
-  width: 285px;
-  height: 50px;
-}
-
-.works-card.works-card--x5:hover {
-  outline: 1900px solid #F78F1E;
-}
-
-.works-card.works-card--x5:hover .works-card__logo {
-  max-width: 110px;
-}
-
-.works-card.works-card--x5:hover .works-card__logo svg {
-  min-width: 280px;
-  fill: #F78F1E;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--x5.active {
-  outline: 1900px solid #F78F1E;
-}
-
-.works-card.works-card--uralsib .works-card__logo svg {
-  width: 254px;
-  height: 50px;
-}
-
-.works-card.works-card--uralsib:hover {
-  outline: 1900px solid #FBD81C;
-}
-
-.works-card.works-card--uralsib:hover .works-card__logo svg {
-  min-width: 245px;
-  fill: #F78F1E;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--uralsib.active {
-  outline: 1900px solid #FBD81C;
-}
-
-.works-card.works-card--wo .works-card__logo svg {
-  width: 175px;
-}
-
-.works-card.works-card--wo:hover {
-  outline: 1900px solid #FFB1B1;
-}
-
-.works-card.works-card--wo.active {
-  outline: 1900px solid #FFB1B1;
-}
-
-.works-card.works-card--pyaterochka .works-card__logo svg {
-  width: 220px;
-}
-
-.works-card.works-card--pyaterochka:hover {
-  outline: 1900px solid #F78F1E;
-}
-
-.works-card.works-card--pyaterochka.active {
-  outline: 1900px solid #F78F1E;
-}
-
-.works-card.works-card--likeСenter .works-card__logo svg {
-  width: 155px;
-  height: 145px;
-}
-
-.works-card.works-card--likeСenter:hover {
-  outline: 1900px solid #F78F1E;
-}
-
-.works-card.works-card--likeСenter:hover .works-card__logo {
-  scale: 0.35;
-}
-
-.works-card.works-card--likeСenter:hover .works-card__logo svg {
-  min-width: 180px;
-  fill: #F78F1E;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--likeСenter.active {
-  outline: 1900px solid #F78F1E;
-}
-
-.works-card.works-card--thirty-six .works-card__logo svg {
-  width: 157px;
-  height: 153px;
-}
-
-.works-card.works-card--thirty-six:hover {
-  outline: 1900px solid #4374AE;
-}
-
-.works-card.works-card--thirty-six:hover .works-card__logo {
-  scale: 0.35;
-}
-
-.works-card.works-card--thirty-six:hover .works-card__logo svg {
-  min-width: 180px;
-  fill: #4374AE;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--thirty-six.active {
-  outline: 1900px solid #4374AE;
-}
-
-.works-card.works-card--vanguard .works-card__logo svg {
-  width: 191px;
-  height: 225px;
-}
-
-.works-card.works-card--vanguard:hover {
-  outline: 1900px solid #E94D05;
-}
-
-.works-card.works-card--vanguard:hover .works-card__logo {
-  scale: 0.25;
-}
-
-.works-card.works-card--vanguard:hover .works-card__logo svg {
-  min-width: 185px;
-  height: 194px;
-  fill: #C3322B;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--vanguard.active {
-  outline: 1900px solid #E94D05;
-}
-
-.works-card.works-card--Gravion .works-card__logo svg {
-  width: 165px;
-  height: 128px;
-}
-
-.works-card.works-card--Gravion:hover {
-  outline: 1900px solid #4F5F79;
-}
-
-.works-card.works-card--Gravion:hover .works-card__logo {
-  scale: 0.30;
-  height: 60px;
-}
-
-.works-card.works-card--Gravion:hover .works-card__logo svg {
-  min-width: 185px;
-  height: 194px;
-  fill: #4F5F79;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--Gravion.active {
-  outline: 1900px solid #4F5F79;
-}
-
-.works-card.works-card--Gorzdrav .works-card__logo svg {
-  width: 133px;
-  height: 129px;
-  fill: transparent;
-}
-
-.works-card.works-card--Gorzdrav:hover {
-  outline: 1900px solid #E94D05;
-}
-
-.works-card.works-card--Gorzdrav:hover .works-card__logo svg {
-  min-width: 185px;
-  height: 141px;
-  fill: #2CA180;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.works-card.works-card--Gorzdrav.active {
-  outline: 1900px solid #E94D05;
-}
-
-.works-card.works-card--Beauty-Maker .works-card__logo svg {
-  width: 283px;
-}
-
-.works-card.works-card--Beauty-Maker:hover {
-  outline: 1900px solid #4374AE;
-}
-
-.works-card.works-card--Beauty-Maker.active {
-  outline: 1900px solid #4374AE;
-}
-
 .works-card:hover {
   z-index: 2;
   -webkit-transition: 1.5s;
   transition: 1.5s;
-  scale: 1.1;
   mix-blend-mode: plus-lighter;
 }
 
@@ -1654,7 +1475,6 @@ a {
 }
 
 .works-card:hover .works-card__logo {
-  scale: 0.4;
   -webkit-transition: 1s;
   transition: 1s;
   width: -webkit-fit-content;

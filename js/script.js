@@ -134,7 +134,7 @@ setTimeout(() => {
       PRESSURE_DISSIPATION: .8,
       PRESSURE_ITERATIONS: 20,
       CURL: 30,
-      SPLAT_RADIUS: .08,
+      SPLAT_RADIUS: .00008,
       SHADING: !0,
       COLORFUL: !0,
       PAUSED: !1,
@@ -324,6 +324,7 @@ setTimeout(() => {
           t = ext.formatRGBA,
           i = ext.supportLinearFiltering ? gl.LINEAR : gl.NEAREST;
       bloom = createFBO(e.width, e.height, t.internalFormat, t.format, r, i), bloomFramebuffers.length = 0;
+
       for (let n = 0; n < config.BLOOM_ITERATIONS; n++) {
           let o = e.width >> n + 1,
               a = e.height >> n + 1;
@@ -486,8 +487,9 @@ setTimeout(() => {
   }
   
   function generateColor() {
-      let e = HSVtoRGB(Math.random(), 1, 1);
-      return e.r *= .15, e.g *= .15, e.b *= .15, e
+      // let e = HSVtoRGB(Math.random(), 1, 1);
+      let e = HSVtoRGB(255, 174, 27);
+      return e.r = 255, e.g = 174, e.b = 27, e
   }
   
   function HSVtoRGB(e, r, t) {
