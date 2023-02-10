@@ -698,7 +698,13 @@ a {
   opacity: 0.6;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1515px) {
+  .skills-card:nth-child(9) {
+    margin-top: -62px;
+  }
+}
+
+@media (max-width: 1399px) {
   .skills__items {
     display: -ms-grid;
     display: grid;
@@ -1465,7 +1471,7 @@ a {
 .works-card {
   overflow: hidden;
   position: relative;
-  background-color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1.5rem;
   max-height: 16.5625rem;
   z-index: 1;
@@ -1492,7 +1498,7 @@ a {
 }
 
 .works-card.works-card--Alibaba:hover {
-  outline: 1900px solid #FB6322;
+  outline: 1900px solid  #FB6322;
 }
 
 .works-card.works-card--Alibaba:hover .works-card__logo {
@@ -1518,7 +1524,7 @@ a {
 }
 
 .works-card.works-card--knowledge:hover {
-  outline: 1900px solid #5289EB;
+  outline: 1900px solid  #5289EB;
 }
 
 .works-card.works-card--knowledge:hover .works-card__logo {
@@ -1813,10 +1819,9 @@ a {
 }
 
 .works-card:hover {
-  z-index: 2;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  mix-blend-mode: plus-lighter;
+  -webkit-transition: z-index 0.1s, 1.5s;
+  transition: z-index 0.1s, 1.5s;
+  scale: 1.1;
 }
 
 .works-card:hover .works-card__inner {

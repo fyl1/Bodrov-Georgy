@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
   modalBtns.forEach((el) => {
 
     el.addEventListener('click', (e) => {
-      // console.log(e.target, "e.target", e.currentTarget.getAttribute('data-path'));
+      console.log(el );
 
       let path = e.currentTarget.getAttribute('data-path');
       el.classList.add('active')
@@ -129,7 +129,7 @@ setTimeout(() => {
   let config = {
       SIM_RESOLUTION: 128,
       DYE_RESOLUTION: 512,
-      DENSITY_DISSIPATION: .97,
+      DENSITY_DISSIPATION: .96,
       VELOCITY_DISSIPATION: .98,
       PRESSURE_DISSIPATION: .8,
       PRESSURE_ITERATIONS: 20,
@@ -145,11 +145,11 @@ setTimeout(() => {
       },
       TRANSPARENT: !1,
       BLOOM: !0,
-      BLOOM_ITERATIONS: 8,
+      BLOOM_ITERATIONS: 118,
       BLOOM_RESOLUTION: 256,
       BLOOM_INTENSITY: .008,
-      BLOOM_THRESHOLD: .06,
-      BLOOM_SOFT_KNEE: .07
+      BLOOM_THRESHOLD: .6,
+      BLOOM_SOFT_KNEE: .7
   };
   
   function pointerPrototype() {
@@ -491,7 +491,7 @@ setTimeout(() => {
       let e = HSVtoRGB(255, (Math.random() * (174 - 145) + 145), (Math.random() * (27 - 17) + 17));
       // return e.r = 255, e.g = 174, e.b = 17, e
       // return e.r *= .15, e.g *= .15, e.b *= .15, e
-      return e.r = 255, e.g = 174, e.b = 17, e
+      return e.r = 255, e.g = 174, e.b = .3, e
 
   }
   
