@@ -13,6 +13,7 @@ h1 {
   font-size: 5.1vw;
   line-height: 1.2;
 
+
 }
 
 h2 {
@@ -133,6 +134,10 @@ padding: 3px 0;
   .container {
     width: calc(100% - 30px);
 
+  }
+  .subtext{
+    font-size: rem-calc(14);
+    margin:  rem-calc(0 20);
   }
 }
 

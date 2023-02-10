@@ -133,8 +133,8 @@ setTimeout(() => {
       VELOCITY_DISSIPATION: .98,
       PRESSURE_DISSIPATION: .8,
       PRESSURE_ITERATIONS: 20,
-      CURL: 30,
-      SPLAT_RADIUS: .00008,
+      CURL: 10,
+      SPLAT_RADIUS: .01,
       SHADING: !0,
       COLORFUL: !0,
       PAUSED: !1,
@@ -147,9 +147,9 @@ setTimeout(() => {
       BLOOM: !0,
       BLOOM_ITERATIONS: 8,
       BLOOM_RESOLUTION: 256,
-      BLOOM_INTENSITY: .8,
-      BLOOM_THRESHOLD: .6,
-      BLOOM_SOFT_KNEE: .7
+      BLOOM_INTENSITY: .008,
+      BLOOM_THRESHOLD: .06,
+      BLOOM_SOFT_KNEE: .07
   };
   
   function pointerPrototype() {
@@ -488,8 +488,11 @@ setTimeout(() => {
   
   function generateColor() {
       // let e = HSVtoRGB(Math.random(), 1, 1);
-      let e = HSVtoRGB(255, 174, 27);
-      return e.r = 255, e.g = 174, e.b = 27, e
+      let e = HSVtoRGB(255, (Math.random() * (174 - 145) + 145), (Math.random() * (27 - 17) + 17));
+      // return e.r = 255, e.g = 174, e.b = 17, e
+      // return e.r *= .15, e.g *= .15, e.b *= .15, e
+      return e.r = 255, e.g = 174, e.b = 17, e
+
   }
   
   function HSVtoRGB(e, r, t) {

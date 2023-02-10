@@ -44,9 +44,9 @@
 	position: relative;
 	background-color: #1E1E1E;
 	padding: rem-calc(14 30 0 30);
-	max-width: 93vw;
-	width: 93%;
-	max-height: 91vh;
+	max-width: 96vw;
+    width: 97%;
+    max-height: 92vh;
 	border-radius: 20px 20px 0 0;
 	text-align: center;
 	overflow: auto;
@@ -295,17 +295,17 @@
 
 .btn--close-modal {
 	position: absolute;
-	right: rem-calc(32);
-	top: rem-calc(30);
+	right: rem-calc(10);
+	top: rem-calc(20);
 	background-color: transparent;
 
-	width: rem-calc(32);
-	height: rem-calc(32);
+	width: rem-calc(22);
+	height: rem-calc(22);
 	z-index: 9;
 cursor: pointer;
 	svg {
-		width: rem-calc(32);
-		height: rem-calc(32);
+		width: rem-calc(22);
+		height: rem-calc(22);
 		fill: #ffffff;
 		transition: 1s;
 	}
@@ -325,8 +325,9 @@ cursor: pointer;
 
 	&__text {
 		width: 40%;
-		padding-right: rem-calc(40);
+		padding-right: rem-calc(60);
 		padding-left: rem-calc(50);
+		padding-top: 30px;
 		box-sizing: border-box;
 	}
 
@@ -354,6 +355,7 @@ cursor: pointer;
 
 	&__list {
 		list-style-type: inherit;
+		padding-left: rem-calc(33);
 	}
 
 	// .modal-intro__li
