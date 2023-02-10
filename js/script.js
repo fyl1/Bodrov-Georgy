@@ -122,7 +122,7 @@ for (let anchor of anchors) {
     })
   })
 }
-setTimeout(() => {
+setInterval(() => {
   
   const canvas = document.getElementById("rainbow");
   canvas.width = canvas.clientWidth, canvas.height = canvas.clientHeight;
@@ -563,5 +563,5 @@ setTimeout(() => {
       for (let e = 0; e < r.length; e++)
           for (let t = 0; t < pointers.length; t++) r[e].identifier == pointers[t].id && (pointers[t].down = !1)
   });
-}, 2000)
+}, 5000)
 }, false);
