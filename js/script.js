@@ -394,7 +394,8 @@ setTimeout(() => {
           t.width = i.width, t.height = i.height, gl.bindTexture(gl.TEXTURE_2D, r), gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, i)
       }), i.src = e, t
   }
-  initFramebuffers(), multipleSplats(parseInt(20 * Math.random()) + 5);
+//   initFramebuffers(), multipleSplats(parseInt(20 * Math.random()) + 5);
+initFramebuffers()
   let lastColorChangeTime = Date.now();
   
   function update() {
