@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: black;
   position: relative;
@@ -137,7 +141,7 @@ padding: 3px 0;
   }
   .subtext{
     font-size: rem-calc(14);
-    margin:  rem-calc(0 20);
+  
   }
 }
 

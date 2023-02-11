@@ -35,7 +35,7 @@
 	opacity: 1;
 	transform: translate(0, 0px);
 	transition:
-		transform 1.6s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+		transform 1.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
 		opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
@@ -60,12 +60,10 @@
 .modal {
 	&.modal-Alibaba {
 		.modal__logo {
-			top: -20px;
+		
 
 			svg {
-				scale: 0.5;
-				min-width: 190px;
-				height: 119px;
+				
 				fill: #FB6322;
 				transition: 1s;
 			}
@@ -85,8 +83,7 @@
 		.modal__logo {
 
 			svg {
-				scale: 0.9;
-				min-width: 280px;
+			
 				fill: #F78F1E;
 				transition: 1s;
 			}
@@ -97,9 +94,8 @@
 		.modal__logo {
 
 			svg {
-				scale: 0.7;
-				min-width: 244px;
-				fill: #F78F1E;
+			
+				fill: #1D63FF;
 				transition: 1s;
 			}
 		}
@@ -107,8 +103,12 @@
 
 	&.modal-wo {
 		.modal__logo {
-			img {
-				width: 80px;
+	
+
+			svg {
+			
+				fill: #FFB1B1;
+				transition: 1s;
 			}
 		}
 	}
@@ -117,13 +117,11 @@
 
 	&.modal-likeСenter {
 		.modal__logo {
-			top: -20px;
+	
 
 			svg {
-				scale: 0.5;
-				min-width: 164px;
-				height: 136px;
-				fill: #F78F1E;
+			
+				fill: #FF2C43;
 				transition: 1s;
 			}
 		}
@@ -131,14 +129,11 @@
 
 	&.modal-thirty-six {
 
-		.modal__logo {
-			top: -30px;
+		.modal__logo.modal__logo {
+			top: -3px;
 
 			svg {
-				min-width: 180px;
-				scale: 0.4;
-				height: 148px;
-
+				
 				fill: #4374AE;
 				transition: 1s;
 			}
@@ -147,11 +142,9 @@
 
 	&.modal-vanguard {
 		.modal__logo {
-			scale: 0.25;
-
+		
 			svg {
-				min-width: 185px;
-				height: 194px;
+			
 				fill: #C3322B;
 				transition: 1s;
 			}
@@ -160,12 +153,12 @@
 
 	&.modal-Gravion {
 		.modal__logo {
-			scale: 0.30;
+		
 
 			svg {
-				min-width: 185px;
-				height: 194px;
-				fill: #4F5F79;
+				
+				fill: 
+				#4F5F79;
 				transition: 1s;
 			}
 		}
@@ -174,15 +167,22 @@
 	&.modal-Gorzdrav {
 		.modal__logo {
 			svg {
-				min-width: 185px;
-				height: 194px;
+			
 				fill: #2CA180;
 				transition: 1s;
 			}
 		}
 	}
 
-	&.modal-Beauty-Maker {}
+	&.modal-Beauty-Maker {
+		.modal__logo {
+			svg {
+			
+				fill: #E26285;
+				transition: 1s;
+			}
+		}
+	}
 
 	// .modal__header
 
@@ -320,11 +320,7 @@ cursor: pointer;
 .modal-intro {
 	display: flex;
 	justify-content: space-between;
-	overflow-x: hidden;
 
-	perspective: 100px;
-	perspective-origin: center top;
-	transform-style: preserve-3d;
 
 	// .modal-intro__text
 
@@ -385,11 +381,13 @@ cursor: pointer;
 	&__img {
 		margin-right: -30px;
 		border-radius: rem-calc(40 0 0 40);
+		overflow-x: clip;
+
 	
 		
 		img {
 			border-radius: rem-calc(30 0 0 30);
-			// transform: scale(1.3);
+			transform: scale(2) translate(0%, 0%);
 		}
 	}
 }
@@ -415,15 +413,13 @@ cursor: pointer;
 	// .modal-rezult__img
 
 	&__img {
-		overflow-x: hidden;
+		overflow-x:hidden;
 
-		perspective: 100px;
-		perspective-origin: center top;
-		transform-style: preserve-3d;
+
 
 		img {
 
-			transform: scale(1.3);
+			transform: scale(1.5) translate(0%, 0%);
 		}
 	}
 
@@ -493,17 +489,28 @@ cursor: pointer;
 }
 
 .modal.modal--open .modal__logo {
-	width: 30%;
+	width: fit-content;
 	height: 60px;
 	top: 10px;
 	scale: 1;
+	max-width:30% ;
+	
 
+	#pyaterochka-2 {
+		--pyaterochka--red2: #EB2316;
+		--pyaterochka--red: #EB2316;
+		--pyaterochka--green: #008F32;
+		transition: 1s;
+
+	}
 	svg {
 		scale: 1;
-		min-width: 100%;
+		width:fit-content;
+		
 		height: 100%;
 		transition: 1s;
 	}
+
 }
 
 @media (min-width: 480px) {}
