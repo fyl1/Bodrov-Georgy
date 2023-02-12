@@ -614,5 +614,5 @@ document.addEventListener('DOMContentLoaded', function () {
             for (let e = 0; e < r.length; e++)
                 for (let t = 0; t < pointers.length; t++) r[e].identifier == pointers[t].id && (pointers[t].down = !1)
         });
-    }, 1000)
+    }, 2000)
 }, false);
