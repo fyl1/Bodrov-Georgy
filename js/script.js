@@ -135,12 +135,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const content2 = document.querySelectorAll('.content-2')
            
             let sum = el.scrollTop / 40;
+            let sum2 = el.scrollTop / 30;
 
             content.forEach((ell) => {
                 ell.style.transform = `scale(2) translate(0%,-${sum + 1}%)`;
             });
             content2.forEach((ell) => {
-                ell.style.transform = `scale(2) translate(0%,-${sum + 2}%)`;
+                ell.style.transform = `scale(2) translate(0%,-${sum + 1}%)`;
             });
         });
 
@@ -613,5 +614,5 @@ document.addEventListener('DOMContentLoaded', function () {
             for (let e = 0; e < r.length; e++)
                 for (let t = 0; t < pointers.length; t++) r[e].identifier == pointers[t].id && (pointers[t].down = !1)
         });
-    }, 2000)
+    }, 1000)
 }, false);
