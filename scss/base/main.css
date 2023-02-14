@@ -234,7 +234,7 @@ a {
   padding: 3px 0;
 }
 
-.service-header__canvas {
+.intro__canvas {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -242,6 +242,7 @@ a {
   left: 0;
   background-color: transparent;
   z-index: 1;
+  opacity: 0.8;
 }
 
 @media (max-width: 767px) {
@@ -1219,7 +1220,7 @@ a {
 .modal-intro__img {
   margin-right: -30px;
   border-radius: 2.5rem 0 0 2.5rem;
-  overflow-x: clip;
+  overflow: clip;
 }
 
 .modal-intro__img img {
@@ -1244,7 +1245,7 @@ a {
 }
 
 .modal-rezult__img {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .modal-rezult__img img {

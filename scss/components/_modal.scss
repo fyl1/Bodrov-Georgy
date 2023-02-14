@@ -381,7 +381,7 @@ cursor: pointer;
 	&__img {
 		margin-right: -30px;
 		border-radius: rem-calc(40 0 0 40);
-		overflow-x: clip;
+		overflow: clip;
 
 	
 		
@@ -413,7 +413,7 @@ cursor: pointer;
 	// .modal-rezult__img
 
 	&__img {
-		overflow-x:hidden;
+		overflow:hidden;
 
 
 
