@@ -67,6 +67,12 @@ z-index: 99;
 @media (max-width: 1199px) {
 }
 @media (max-width: 991px) {
+  .logo-img{
+    img{
+      width: auto;
+      height: auto;
+    }
+  }
 }
 @media (max-width: 767px) {
   .menu__link{

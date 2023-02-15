@@ -294,6 +294,13 @@ a {
   transition: 0.6s;
 }
 
+@media (max-width: 991px) {
+  .logo-img img {
+    width: auto;
+    height: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .menu__link {
     margin-right: 2.125rem;
@@ -1246,6 +1253,7 @@ a {
 
 .modal-rezult__img {
   overflow: hidden;
+  border-radius: 56px;
 }
 
 .modal-rezult__img img {
@@ -1302,14 +1310,14 @@ a {
   padding: 4.375rem 0 10.625rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .modal-contact__link a:hover {
   color: #FFAE1B;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .modal.modal--open .modal__logo {
@@ -1807,6 +1815,7 @@ a {
 
 .works-card:hover .works-card__inner {
   padding: 13px 24px 24px 24px;
+  border-radius: 1.5rem;
 }
 
 .works-card:hover .works-card__logo {
@@ -1879,6 +1888,7 @@ a {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 1.5rem;
 }
 
 .works-card__header {

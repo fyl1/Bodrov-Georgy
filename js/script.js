@@ -153,53 +153,53 @@ document.addEventListener('DOMContentLoaded', function () {
         const canvas = document.getElementById("rainbow");
         canvas.width = canvas.clientWidth, canvas.height = canvas.clientHeight;
         let config = {
-            // SIM_RESOLUTION: 128,
-            // DYE_RESOLUTION: 512,
-            // DENSITY_DISSIPATION: .96,
-            // VELOCITY_DISSIPATION: .98,
-            // PRESSURE_DISSIPATION: .8,
-            // PRESSURE_ITERATIONS: 20,
-            // CURL: 10,
-            // SPLAT_RADIUS: .01,
-            // SHADING: !0,
-            // COLORFUL: !0,
-            // PAUSED: !1,
-            // BACK_COLOR: {
-            //     r: 0,
-            //     g: 0,
-            //     b: 0,
-            // },
-            // TRANSPARENT: !1,
-            // BLOOM: !0,
-            // BLOOM_ITERATIONS: 118,
-            // BLOOM_RESOLUTION: 256,
-            // BLOOM_INTENSITY: .008,
-            // BLOOM_THRESHOLD: .6,
-            // BLOOM_SOFT_KNEE: .7
             SIM_RESOLUTION: 128,
             DYE_RESOLUTION: 512,
-            // DENSITY_DISSIPATION: .97,
-            DENSITY_DISSIPATION: .96,
-            VELOCITY_DISSIPATION: .98,
+            DENSITY_DISSIPATION: .97,
+            VELOCITY_DISSIPATION: .93,
             PRESSURE_DISSIPATION: .8,
             PRESSURE_ITERATIONS: 20,
             CURL: 30,
-            SPLAT_RADIUS: .05,
+            SPLAT_RADIUS: .3,
             SHADING: !0,
             COLORFUL: !0,
             PAUSED: !1,
             BACK_COLOR: {
                 r: 0,
-                     g: 0,
-                     b: 0,
+                g: 0,
+                b: 0
             },
             TRANSPARENT: !1,
-            BLOOM: !1,
+            BLOOM: !0,
             BLOOM_ITERATIONS: 8,
             BLOOM_RESOLUTION: 256,
             BLOOM_INTENSITY: .8,
             BLOOM_THRESHOLD: .6,
             BLOOM_SOFT_KNEE: .7
+            // SIM_RESOLUTION: 128,
+            // DYE_RESOLUTION: 512,
+            // // DENSITY_DISSIPATION: .97,
+            // DENSITY_DISSIPATION: .96,
+            // VELOCITY_DISSIPATION: .98,
+            // PRESSURE_DISSIPATION: .8,
+            // PRESSURE_ITERATIONS: 20,
+            // CURL: 30,
+            // SPLAT_RADIUS: .05,
+            // SHADING: !0,
+            // COLORFUL: !0,
+            // PAUSED: !1,
+            // BACK_COLOR: {
+            //     r: 0,
+            //          g: 0,
+            //          b: 0,
+            // },
+            // TRANSPARENT: !1,
+            // BLOOM: !1,
+            // BLOOM_ITERATIONS: 8,
+            // BLOOM_RESOLUTION: 256,
+            // BLOOM_INTENSITY: .8,
+            // BLOOM_THRESHOLD: .6,
+            // BLOOM_SOFT_KNEE: .7
         };
 
         function pointerPrototype() {
@@ -537,13 +537,20 @@ document.addEventListener('DOMContentLoaded', function () {
             canvas.width == canvas.clientWidth && canvas.height == canvas.clientHeight || (canvas.width = canvas.clientWidth, canvas.height = canvas.clientHeight, initFramebuffers())
         }
 
-        function generateColor() {
-            // let e = HSVtoRGB(Math.random(), 1, 1);
-            let e = HSVtoRGB(255, (Math.random() * (174 - 145) + 145), (Math.random() * (27 - 17) + 17));
-            // return e.r = 255, e.g = 174, e.b = 17, e
-            // return e.r *= .15, e.g *= .15, e.b *= .15, e
-            return e.r = 255, e.g = 174, e.b = .3, e
+        // function generateColor() {
+        //     // let e = HSVtoRGB(Math.random(), 1, 1);
+        //     let e = HSVtoRGB(255, (Math.random() * (174 - 145) + 145), (Math.random() * (27 - 17) + 17));
+        //     // return e.r = 255, e.g = 174, e.b = 17, e
+        //     // return e.r *= .15, e.g *= .15, e.b *= .15, e
+        //     return e.r = 255, e.g = 174, e.b = .3, e
 
+        // }
+        function generateColor() {
+            let e = HSVtoRGB(Math.random(), 1, 1);
+            return e.r *= .15,
+            e.g *= .15,
+            e.b *= .15,
+            e
         }
 
         function HSVtoRGB(e, r, t) {

@@ -6,6 +6,7 @@
     &__inner {
         padding-top: 200px;
         padding-bottom: 100px;
+  
     }
 
     // .works__items
@@ -399,6 +400,7 @@
 
         .works-card__inner {
             padding: 13px 24px 24px 24px;
+            border-radius: rem-calc(24);
         }
 
 
@@ -470,6 +472,7 @@
         padding: rem-calc(40);
         height: 100%;
         box-sizing: border-box;
+        border-radius: rem-calc(24);
     }
 
     // .works-card__header
