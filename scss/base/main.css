@@ -956,7 +956,7 @@ a {
 
 .modal-wrapper {
   position: relative;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   padding: 0.875rem 1.875rem 0 1.875rem;
   max-width: 96vw;
   width: 97%;
@@ -973,7 +973,7 @@ a {
 }
 
 .modal.modal-Alibaba .modal__logo svg {
-  fill: #FB6322;
+  fill: #fb6322;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -983,25 +983,25 @@ a {
 }
 
 .modal.modal-x5 .modal__logo svg {
-  fill: #F78F1E;
+  fill: #f78f1e;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-uralsib .modal__logo svg {
-  fill: #1D63FF;
+  fill: #1d63ff;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-wo .modal__logo svg {
-  fill: #FFB1B1;
+  fill: #ffb1b1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-likeСenter .modal__logo svg {
-  fill: #FF2C43;
+  fill: #ff2c43;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1011,31 +1011,31 @@ a {
 }
 
 .modal.modal-thirty-six .modal__logo.modal__logo svg {
-  fill: #4374AE;
+  fill: #4374ae;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-vanguard .modal__logo svg {
-  fill: #C3322B;
+  fill: #c3322b;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-Gravion .modal__logo svg {
-  fill: #4F5F79;
+  fill: #4f5f79;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-Gorzdrav .modal__logo svg {
-  fill: #2CA180;
+  fill: #2ca180;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-Beauty-Maker .modal__logo svg {
-  fill: #E26285;
+  fill: #e26285;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1107,7 +1107,7 @@ a {
   /* identical to box height, or 143% */
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .modal-item {
@@ -1124,7 +1124,7 @@ a {
   text-transform: uppercase;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 4px;
 }
 
@@ -1142,7 +1142,7 @@ a {
   text-transform: uppercase;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 4px;
 }
 
@@ -1154,6 +1154,7 @@ a {
   width: 1.375rem;
   height: 1.375rem;
   z-index: 9;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -1221,7 +1222,7 @@ a {
   /* or 157% */
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .modal-intro__img {
@@ -1248,7 +1249,7 @@ a {
   font-size: 56px;
   line-height: 76px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .modal-rezult__img {
@@ -1268,7 +1269,7 @@ a {
 .modal-rezult__li {
   list-style-type: disc;
   padding-bottom: 2.5625rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .modal-rezult__li h2 {
@@ -1278,7 +1279,7 @@ a {
   font-size: 28px;
   line-height: 36px;
   /* identical to box height, or 129% */
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -1290,6 +1291,32 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #858585;
+}
+
+.modal-contact__link {
+  padding: 4.375rem 0 10.625rem 0;
+}
+
+.modal-contact__link .contacts__img--telegr {
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: translate(0px, 20px);
+          transform: translate(0px, 20px);
+}
+
+.modal-contact__link:hover .contacts__img--telegr {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.modal-contact__link:hover a {
+  color: #FFAE1B;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .modal-contact__link a {
@@ -1306,16 +1333,9 @@ a {
   line-height: 100%;
   /* identical to box height, or 120px */
   text-align: center;
-  color: #FFFFFF;
-  padding: 4.375rem 0 10.625rem 0;
+  color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.modal-contact__link a:hover {
-  color: #FFAE1B;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -1331,9 +1351,9 @@ a {
 }
 
 .modal.modal--open .modal__logo #pyaterochka-2 {
-  --pyaterochka--red2: #EB2316;
-  --pyaterochka--red: #EB2316;
-  --pyaterochka--green: #008F32;
+  --pyaterochka--red2: #eb2316;
+  --pyaterochka--red: #eb2316;
+  --pyaterochka--green: #008f32;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1371,9 +1391,11 @@ a {
 }
 
 @media (max-width: 767px) {
+  .modal-contact__link {
+    padding-bottom: 80px;
+  }
   .modal-contact__link a {
     font-size: 50px;
-    padding-bottom: 80px;
   }
   .modal-intro {
     -webkit-box-orient: vertical;
@@ -1427,10 +1449,12 @@ a {
   .modal-rezult {
     margin: 30px 0 0 0;
   }
-  .modal-contact__link a {
-    font-size: 40px;
+  .modal-contact__link {
     padding-bottom: 60px;
     padding-top: 40px;
+  }
+  .modal-contact__link a {
+    font-size: 40px;
   }
 }
 
@@ -1811,6 +1835,8 @@ a {
   -webkit-transition: z-index 0.1s, 1.5s;
   transition: z-index 0.1s, 1.5s;
   scale: 1.1;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .works-card:hover .works-card__inner {
