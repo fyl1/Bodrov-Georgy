@@ -39,6 +39,7 @@
     outline: 0px solid;
     scale: 1;
     cursor: pointer;
+    isolation: isolate;
     .works-card__logo {
         position: absolute;
         left: 0;
@@ -397,6 +398,7 @@
         transition: z-index 0.1s, 1.5s;
         scale: 1.1;
         transform: translateZ(0);
+        border-radius: rem-calc(24);
         // mix-blend-mode: plus-lighter;
 
         .works-card__inner {

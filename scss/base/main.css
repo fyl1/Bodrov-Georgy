@@ -1490,6 +1490,7 @@ a {
   outline: 0px solid;
   scale: 1;
   cursor: pointer;
+  isolation: isolate;
 }
 
 .works-card .works-card__logo {
@@ -1837,6 +1838,7 @@ a {
   scale: 1.1;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
+  border-radius: 1.5rem;
 }
 
 .works-card:hover .works-card__inner {
