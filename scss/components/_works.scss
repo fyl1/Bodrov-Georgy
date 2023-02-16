@@ -40,6 +40,7 @@
     scale: 1;
     cursor: pointer;
     isolation: isolate;
+    transform: translateZ(0);
     .works-card__logo {
         position: absolute;
         left: 0;
@@ -52,6 +53,7 @@
         }
     }
 
+
     &.works-card--Alibaba {
         .works-card__logo {
             transform: translate(8vw, 66px);
@@ -60,7 +62,7 @@
 
         &:hover {
             // outline: 1900px solid #FB6322;
-            outline: 1900px solid #FB6322;
+            // outline: 1900px solid #FB6322;
 
             .works-card__logo {
                 transform: translate(-55px, -80px);
@@ -397,6 +399,7 @@
         z-index: 2;
         transition: z-index 0.1s, 1.5s;
         scale: 1.1;
+        isolation: isolate;
         transform: translateZ(0);
         border-radius: rem-calc(24);
         // mix-blend-mode: plus-lighter;

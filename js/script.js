@@ -135,13 +135,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const content2 = document.querySelectorAll('.content-2')
            
             let sum = el.scrollTop / 40;
-            let sum2 = el.scrollTop / 30;
+            let sum2 = el.scrollTop / 55;
 
             content.forEach((ell) => {
                 ell.style.transform = `scale(2) translate(0%,-${sum + 1}%)`;
             });
             content2.forEach((ell) => {
-                ell.style.transform = `scale(2) translate(0%,-${sum + 1}%)`;
+                ell.style.transform = `scale(1.4) translate(0%,-${sum2 + 1}%)`;
             });
         });
 

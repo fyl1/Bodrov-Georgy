@@ -1491,6 +1491,8 @@ a {
   scale: 1;
   cursor: pointer;
   isolation: isolate;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .works-card .works-card__logo {
@@ -1508,10 +1510,6 @@ a {
   -webkit-transform: translate(8vw, 66px);
           transform: translate(8vw, 66px);
   width: 12vw;
-}
-
-.works-card.works-card--Alibaba:hover {
-  outline: 1900px solid #FB6322;
 }
 
 .works-card.works-card--Alibaba:hover .works-card__logo {
@@ -1836,6 +1834,7 @@ a {
   -webkit-transition: z-index 0.1s, 1.5s;
   transition: z-index 0.1s, 1.5s;
   scale: 1.1;
+  isolation: isolate;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   border-radius: 1.5rem;
