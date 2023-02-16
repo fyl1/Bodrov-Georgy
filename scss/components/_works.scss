@@ -27,7 +27,7 @@
 }
 
 .works-card {
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
     // background-color: #1a1a1a;
     // background-color: rgba(2,2,2,0.3);
@@ -35,14 +35,16 @@
     border-radius: rem-calc(24);
     max-height: rem-calc(265);
     z-index: 4;
-    // transition: 1s;
+    transition: 1s;
     outline: 0px solid;
   
     cursor: pointer;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: rem-calc(24);
+    scale: 1;
     // isolation: isolate;
     // transform: translateZ(0);
-    will-change: transform;
+    // will-change: transform;
     .works-card__logo {
         position: absolute;
         left: 0;
@@ -54,12 +56,20 @@
             height: auto;
         }
     }
-    .works-card__inner{
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: rem-calc(24);
-        scale: 1;
-    }
+ &::after{
+     content: "";
+     position: absolute;
+     width: 1%;
+     height: 1;
+     left: 50%;
+     top: 50%;
+     transition: 1s;
+     z-index: -1;
 
+ }
+.works-card__open{
+    opacity: 0;
+}
     &.works-card--Alibaba {
         .works-card__logo {
             transform: translate(8vw, 66px);
@@ -67,6 +77,11 @@
         }
 
         &:hover {
+            &::after{
+               outline: 1900px solid #FB6322;
+               transition: 1s;
+           
+            }
             // outline: 1900px solid #FB6322;
             // outline: 1900px solid #FB6322;
 
@@ -83,7 +98,10 @@
         }
 
         &.active {
-            outline: 1900px solid #FB6322;
+            &::after{
+                outline: 1900px solid #FB6322;
+            
+             }
         }
 
     }
@@ -409,10 +427,16 @@
         transform: translateZ(0);
         border-radius: rem-calc(24);
         // mix-blend-mode: plus-lighter;
+
+        background-color:#1A1A1A;
         will-change: transform;
         .works-card__inner {
             padding: 13px 24px 24px 24px;
             border-radius: rem-calc(24);
+            background-color:#1A1A1A;
+        }
+        .works-card__open{
+            opacity: 1;
         }
 
 
@@ -457,6 +481,7 @@
             bottom: 0;
             background-image: linear-gradient(180deg, rgba(25, 25, 25, 0.7) 0%, #191919 100%);
             z-index: 1;
+            border-radius: rem-calc(24);
         }
 
         & .works-card__open {
@@ -479,6 +504,7 @@
     // .works-card__inner
 
     &__inner {
+        overflow: hidden;
         height: 100%;
         pointer-events: none;
         padding: rem-calc(40);
