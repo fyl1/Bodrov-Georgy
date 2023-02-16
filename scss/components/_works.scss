@@ -100,8 +100,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #FB6322;
-                transition: 1.5s;
-             }
+animation-delay: 1s;             }
         }
 
     }
@@ -129,7 +128,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #5289EB;
-                transition: 1.5s;
+                animation-delay: 1s;  
             
              }
         }
@@ -164,8 +163,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #F78F1E;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -199,8 +197,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #1D63FF;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -227,8 +224,7 @@
            
             &::after{
                 outline: 1900px solid #FFB1B1;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
 
@@ -290,8 +286,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #F78F1E;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -324,8 +319,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #FF2C43;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -358,8 +352,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #4374AE;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -393,8 +386,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #E94D05;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -427,8 +419,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #4F5F79;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -469,8 +460,7 @@
             
             &::after{
                 outline: 1900px solid #E94D05;
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
@@ -504,9 +494,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #E26285;
-
-                transition: 1.5s;
-            
+                animation-delay: 1s;              
              }
         }
     }
