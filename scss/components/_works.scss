@@ -31,16 +31,17 @@
     position: relative;
     // background-color: #1a1a1a;
     // background-color: rgba(2,2,2,0.3);
-    background-color: rgba(255, 255, 255, 0.1);
+    
     border-radius: rem-calc(24);
     max-height: rem-calc(265);
     z-index: 4;
     // transition: 1s;
     outline: 0px solid;
-    scale: 1;
+  
     cursor: pointer;
-    isolation: isolate;
-    transform: translateZ(0);
+    background-color: transparent;
+    // isolation: isolate;
+    // transform: translateZ(0);
     will-change: transform;
     .works-card__logo {
         position: absolute;
@@ -53,7 +54,11 @@
             height: auto;
         }
     }
-
+    .works-card__inner{
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: rem-calc(24);
+        scale: 1;
+    }
 
     &.works-card--Alibaba {
         .works-card__logo {
@@ -64,9 +69,7 @@
         &:hover {
             // outline: 1900px solid #FB6322;
             // outline: 1900px solid #FB6322;
-.works-card__inner{
 
-}
             .works-card__logo {
                 transform: translate(-55px, -80px);
                 scale: 0.45;

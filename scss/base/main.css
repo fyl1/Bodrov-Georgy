@@ -1483,16 +1483,12 @@ a {
 .works-card {
   overflow: hidden;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1.5rem;
   max-height: 16.5625rem;
   z-index: 4;
   outline: 0px solid;
-  scale: 1;
   cursor: pointer;
-  isolation: isolate;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  background-color: transparent;
   will-change: transform;
 }
 
@@ -1505,6 +1501,12 @@ a {
 .works-card .works-card__logo img {
   width: auto;
   height: auto;
+}
+
+.works-card .works-card__inner {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  scale: 1;
 }
 
 .works-card.works-card--Alibaba .works-card__logo {
