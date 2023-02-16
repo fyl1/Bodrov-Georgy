@@ -1485,8 +1485,6 @@ a {
   border-radius: 1.5rem;
   max-height: 16.5625rem;
   z-index: 4;
-  -webkit-transition: 1s;
-  transition: 1s;
   outline: 0px solid;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1529,8 +1527,8 @@ a {
 
 .works-card.works-card--Alibaba:hover::after {
   outline: 1900px solid #FB6322;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--Alibaba:hover .works-card__logo {
@@ -1547,8 +1545,8 @@ a {
 
 .works-card.works-card--Alibaba.active::after {
   outline: 1900px solid #FB6322;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--knowledge .works-card__logo {
@@ -1557,8 +1555,10 @@ a {
   width: 14vw;
 }
 
-.works-card.works-card--knowledge:hover {
+.works-card.works-card--knowledge:hover::after {
   outline: 1900px solid #5289EB;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--knowledge:hover .works-card__logo {
@@ -1567,8 +1567,10 @@ a {
   scale: 0.4;
 }
 
-.works-card.works-card--knowledge.active {
+.works-card.works-card--knowledge.active::after {
   outline: 1900px solid #5289EB;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--x5 .works-card__logo {
@@ -1577,8 +1579,10 @@ a {
   width: 20vw;
 }
 
-.works-card.works-card--x5:hover {
+.works-card.works-card--x5:hover::after {
   outline: 1900px solid #F78F1E;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--x5:hover .works-card__logo {
@@ -1593,8 +1597,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--x5.active {
+.works-card.works-card--x5.active::after {
   outline: 1900px solid #F78F1E;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--uralsib .works-card__logo {
@@ -1603,8 +1609,10 @@ a {
   width: 17vw;
 }
 
-.works-card.works-card--uralsib:hover {
+.works-card.works-card--uralsib:hover::after {
   outline: 1900px solid #1D63FF;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--uralsib:hover .works-card__logo {
@@ -1619,18 +1627,16 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--uralsib.active {
-  outline: 1900px solid #FBD81C;
+.works-card.works-card--uralsib.active::after {
+  outline: 1900px solid #1D63FF;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--wo .works-card__logo {
   -webkit-transform: translate(9vw, 92px);
           transform: translate(9vw, 92px);
   width: 11vw;
-}
-
-.works-card.works-card--wo:hover {
-  outline: 1900px solid #FFB1B1;
 }
 
 .works-card.works-card--wo:hover .works-card__logo {
@@ -1645,8 +1651,16 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--wo.active {
+.works-card.works-card--wo:hover::after {
   outline: 1900px solid #FFB1B1;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.works-card.works-card--wo.active::after {
+  outline: 1900px solid #FFB1B1;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card #pyaterochka-1 {
@@ -1663,8 +1677,10 @@ a {
   width: 17vw;
 }
 
-.works-card.works-card--pyaterochka:hover {
+.works-card.works-card--pyaterochka:hover::after {
   outline: 1900px solid #F78F1E;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--pyaterochka:hover .works-card__logo {
@@ -1686,8 +1702,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--pyaterochka.active {
+.works-card.works-card--pyaterochka.active::after {
   outline: 1900px solid #F78F1E;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--likeСenter .works-card__logo {
@@ -1696,8 +1714,10 @@ a {
   width: 11vw;
 }
 
-.works-card.works-card--likeСenter:hover {
+.works-card.works-card--likeСenter:hover::after {
   outline: 1900px solid #FF2C43;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--likeСenter:hover .works-card__logo {
@@ -1708,12 +1728,14 @@ a {
 
 .works-card.works-card--likeСenter:hover .works-card__logo svg {
   fill: #FF2C43;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
-.works-card.works-card--likeСenter.active {
-  outline: 1900px solid #F78F1E;
+.works-card.works-card--likeСenter.active::after {
+  outline: 1900px solid #FF2C43;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--thirty-six .works-card__logo {
@@ -1722,8 +1744,10 @@ a {
   width: 10vw;
 }
 
-.works-card.works-card--thirty-six:hover {
+.works-card.works-card--thirty-six:hover::after {
   outline: 1900px solid #4374AE;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--thirty-six:hover .works-card__logo {
@@ -1738,8 +1762,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--thirty-six.active {
+.works-card.works-card--thirty-six.active::after {
   outline: 1900px solid #4374AE;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--vanguard .works-card__logo {
@@ -1748,8 +1774,10 @@ a {
   width: 14vw;
 }
 
-.works-card.works-card--vanguard:hover {
+.works-card.works-card--vanguard:hover::after {
   outline: 1900px solid #E94D05;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--vanguard:hover .works-card__logo {
@@ -1764,8 +1792,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--vanguard.active {
+.works-card.works-card--vanguard.active::after {
   outline: 1900px solid #E94D05;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--Gravion .works-card__logo {
@@ -1774,8 +1804,10 @@ a {
   width: 12vw;
 }
 
-.works-card.works-card--Gravion:hover {
+.works-card.works-card--Gravion:hover::after {
   outline: 1900px solid #4F5F79;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--Gravion:hover .works-card__logo {
@@ -1790,8 +1822,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--Gravion.active {
+.works-card.works-card--Gravion.active::after {
   outline: 1900px solid #4F5F79;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--Gorzdrav .works-card__logo {
@@ -1806,8 +1840,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--Gorzdrav:hover {
+.works-card.works-card--Gorzdrav:hover::after {
   outline: 1900px solid #E94D05;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--Gorzdrav:hover .works-card__logo {
@@ -1822,8 +1858,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--Gorzdrav.active {
+.works-card.works-card--Gorzdrav.active::after {
   outline: 1900px solid #E94D05;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--Beauty-Maker .works-card__logo {
@@ -1832,8 +1870,10 @@ a {
   width: 20vw;
 }
 
-.works-card.works-card--Beauty-Maker:hover {
+.works-card.works-card--Beauty-Maker:hover::after {
   outline: 1900px solid #E26285;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card.works-card--Beauty-Maker:hover .works-card__logo {
@@ -1848,8 +1888,10 @@ a {
   transition: 1s;
 }
 
-.works-card.works-card--Beauty-Maker.active {
+.works-card.works-card--Beauty-Maker.active::after {
   outline: 1900px solid #E26285;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .works-card:hover {
