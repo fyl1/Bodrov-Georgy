@@ -41,6 +41,7 @@
     cursor: pointer;
     isolation: isolate;
     transform: translateZ(0);
+    will-change: transform;
     .works-card__logo {
         position: absolute;
         left: 0;
@@ -403,7 +404,7 @@
         transform: translateZ(0);
         border-radius: rem-calc(24);
         // mix-blend-mode: plus-lighter;
-
+        will-change: transform;
         .works-card__inner {
             padding: 13px 24px 24px 24px;
             border-radius: rem-calc(24);
