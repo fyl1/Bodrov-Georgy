@@ -100,7 +100,7 @@
         &.active {
             &::after{
                 outline: 1900px solid #FB6322;
-            
+                transition: 1s;
              }
         }
 

@@ -1547,6 +1547,8 @@ a {
 
 .works-card.works-card--Alibaba.active::after {
   outline: 1900px solid #FB6322;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .works-card.works-card--knowledge .works-card__logo {
