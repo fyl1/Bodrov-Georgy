@@ -2169,9 +2169,6 @@ a {
             transform: translate(15vw, 66px);
     width: 12vw;
   }
-  .works-card.works-card--Alibaba.active {
-    outline: 1900px solid #FB6322;
-  }
   .works-card.works-card--knowledge .works-card__logo {
     -webkit-transform: translate(14vw, 93px);
             transform: translate(14vw, 93px);
@@ -2180,9 +2177,6 @@ a {
   .works-card.works-card--knowledge:hover .works-card__logo {
     -webkit-transform: translate(-32px, -15px);
             transform: translate(-32px, -15px);
-  }
-  .works-card.works-card--knowledge.active {
-    outline: 1900px solid #5289EB;
   }
   .works-card.works-card--x5 .works-card__logo {
     -webkit-transform: translate(12vw, 111px);
@@ -2193,9 +2187,6 @@ a {
     -webkit-transform: translate(-126px, 33px);
             transform: translate(-126px, 33px);
   }
-  .works-card.works-card--x5.active {
-    outline: 1900px solid #F78F1E;
-  }
   .works-card.works-card--uralsib .works-card__logo {
     -webkit-transform: translate(13vw, 111px);
             transform: translate(13vw, 111px);
@@ -2204,9 +2195,6 @@ a {
   .works-card.works-card--uralsib:hover .works-card__logo {
     -webkit-transform: translate(-71px, 33px);
             transform: translate(-71px, 33px);
-  }
-  .works-card.works-card--uralsib.active {
-    outline: 1900px solid #FBD81C;
   }
   .works-card.works-card--wo .works-card__logo {
     -webkit-transform: translate(15vw, 92px);
@@ -2217,9 +2205,6 @@ a {
     -webkit-transform: translate(-52px, -28px);
             transform: translate(-52px, -28px);
   }
-  .works-card.works-card--wo.active {
-    outline: 1900px solid #FFB1B1;
-  }
   .works-card.works-card--pyaterochka .works-card__logo {
     -webkit-transform: translate(13vw, 106px);
             transform: translate(13vw, 106px);
@@ -2228,9 +2213,6 @@ a {
   .works-card.works-card--pyaterochka:hover .works-card__logo {
     -webkit-transform: translate(-47px, 9px);
             transform: translate(-47px, 9px);
-  }
-  .works-card.works-card--pyaterochka.active {
-    outline: 1900px solid #F78F1E;
   }
   .works-card.works-card--likeСenter .works-card__logo {
     -webkit-transform: translate(15vw, 65px);
@@ -2241,9 +2223,6 @@ a {
     -webkit-transform: translate(-82px, -109px);
             transform: translate(-82px, -109px);
   }
-  .works-card.works-card--likeСenter.active {
-    outline: 1900px solid #F78F1E;
-  }
   .works-card.works-card--thirty-six .works-card__logo {
     -webkit-transform: translate(15.2vw, 57px);
             transform: translate(15.2vw, 57px);
@@ -2252,9 +2231,6 @@ a {
   .works-card.works-card--thirty-six:hover .works-card__logo {
     -webkit-transform: translate(-82px, -109px);
             transform: translate(-82px, -109px);
-  }
-  .works-card.works-card--thirty-six.active {
-    outline: 1900px solid #4374AE;
   }
   .works-card.works-card--vanguard .works-card__logo {
     -webkit-transform: translate(14.2vw, 26px);
@@ -2265,9 +2241,6 @@ a {
     -webkit-transform: translate(-94px, -180px);
             transform: translate(-94px, -180px);
     scale: 0.35;
-  }
-  .works-card.works-card--vanguard.active {
-    outline: 1900px solid #E94D05;
   }
   .works-card.works-card--Gravion .works-card__logo {
     -webkit-transform: translate(15.2vw, 65px);
@@ -2297,9 +2270,6 @@ a {
             transform: translate(-66px, -81px);
     scale: 0.4;
   }
-  .works-card.works-card--Gorzdrav.active {
-    outline: 1900px solid #E94D05;
-  }
   .works-card.works-card--Beauty-Maker .works-card__logo {
     -webkit-transform: translate(12.2vw, 106px);
             transform: translate(12.2vw, 106px);
@@ -2309,9 +2279,6 @@ a {
     -webkit-transform: translate(-57px, 15px);
             transform: translate(-57px, 15px);
     scale: 0.5;
-  }
-  .works-card.works-card--Beauty-Maker.active {
-    outline: 1900px solid #E26285;
   }
 }
 
