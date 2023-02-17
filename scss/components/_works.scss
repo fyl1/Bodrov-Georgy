@@ -75,6 +75,21 @@
         opacity: 0;
     }
 
+    &.active {
+        &::after {
+
+            animation-delay: 2s;
+            z-index: 2;
+        }
+        .works-card__inner {
+            position: relative;
+            z-index: 3;
+            padding: 13px 24px 24px 24px;
+            border-radius: rem-calc(24);
+            background-color: #1A1A1A;
+        }
+    }
+
     &.works-card--Alibaba {
         .works-card__logo {
             transform: translate(8vw, 66px);
@@ -1134,9 +1149,7 @@
 
 
 
-            &.active {
-                outline: 1900px solid #FB6322;
-            }
+
 
         }
 
@@ -1316,9 +1329,7 @@
             }
 
 
-            &.active {
-                outline: 1900px solid #FB6322;
-            }
+
 
         }
 
