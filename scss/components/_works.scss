@@ -6,14 +6,14 @@
     &__inner {
         padding-top: 200px;
         padding-bottom: 100px;
-  
+
     }
 
     // .works__items
 
     &__items {
         position: relative;
-    z-index: 6;
+        z-index: 6;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -31,17 +31,18 @@
     position: relative;
     // background-color: #1a1a1a;
     // background-color: rgba(2,2,2,0.3);
-    
+
     border-radius: rem-calc(24);
     max-height: rem-calc(265);
     z-index: 4;
     // transition: 1s;
     outline: 0px solid;
-  
+
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: rem-calc(24);
     scale: 1;
+
     // isolation: isolate;
     // transform: translateZ(0);
     // will-change: transform;
@@ -56,20 +57,23 @@
             height: auto;
         }
     }
- &::after{
-     content: "";
-     position: absolute;
-     width: 1%;
-     height: 1;
-     left: 50%;
-     top: 50%;
-     transition: 1s;
-     z-index: -1;
 
- }
-.works-card__open{
-    opacity: 0;
-}
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1%;
+        height: 1;
+        left: 50%;
+        top: 50%;
+        transition: 1s;
+        z-index: -1;
+
+    }
+
+    .works-card__open {
+        opacity: 0;
+    }
+
     &.works-card--Alibaba {
         .works-card__logo {
             transform: translate(8vw, 66px);
@@ -77,11 +81,12 @@
         }
 
         &:hover {
-            &::after{
-               outline: 1900px solid #FB6322;
-               transition: 1.5s;
-           
+            &::after {
+                outline: 1900px solid #FB6322;
+                transition: 1.5s;
+
             }
+
             // outline: 1900px solid #FB6322;
             // outline: 1900px solid #FB6322;
 
@@ -98,9 +103,10 @@
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #FB6322;
-animation-delay: 1s;             }
+                animation-delay: 2s;
+            }
         }
 
     }
@@ -112,12 +118,13 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #5289EB;
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-97px, -15px);
                 scale: 0.4;
@@ -126,11 +133,11 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #5289EB;
-                animation-delay: 1s;  
-            
-             }
+                animation-delay: 2s;
+
+            }
         }
     }
 
@@ -141,12 +148,12 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-            &::after{
+            &::after {
                 outline: 1900px solid #F78F1E;
                 transition: 1.5s;
-            
-             }
-           
+
+            }
+
 
             .works-card__logo {
                 transform: translate(-145px, 30px);
@@ -161,10 +168,10 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #F78F1E;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -175,12 +182,12 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #1D63FF;
                 transition: 1.5s;
-            
-             }
+
+            }
 
             .works-card__logo {
                 transform: translate(-85px, 26px);
@@ -195,10 +202,10 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #1D63FF;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -221,20 +228,20 @@ animation-delay: 1s;             }
                 }
             }
 
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #FFB1B1;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
 
         &.active {
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #FFB1B1;
                 transition: 1.5s;
-            
-             }
+
+            }
         }
     }
 
@@ -255,14 +262,15 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-           
 
 
-            &::after{
+
+            &::after {
                 outline: 1900px solid #F78F1E;
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-57px, 16px);
                 scale: 0.53;
@@ -284,10 +292,10 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #F78F1E;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -298,12 +306,13 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #FF2C43;
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-88px, -99px);
                 scale: 0.29;
@@ -317,10 +326,10 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #FF2C43;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -331,12 +340,13 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-          
-            &::after{
+
+            &::after {
                 outline: 1900px solid #4374AE;
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-88px, -117px);
                 scale: 0.29;
@@ -350,10 +360,10 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #4374AE;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -365,12 +375,13 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #E94D05;
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-280px, -320px);
                 scale: 0.20;
@@ -384,10 +395,9 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #E94D05;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;            }
         }
     }
 
@@ -398,12 +408,13 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #4F5F79;
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-96px, -90px);
                 scale: 0.30;
@@ -417,10 +428,9 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #4F5F79;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;            }
         }
     }
 
@@ -438,12 +448,13 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-            
-            &::after{
+
+            &::after {
                 outline: 1900px solid #E94D05;
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-100px, -94px);
                 scale: 0.30;
@@ -457,11 +468,11 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            
-            &::after{
+
+            &::after {
                 outline: 1900px solid #E94D05;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -472,13 +483,14 @@ animation-delay: 1s;             }
         }
 
         &:hover {
-           
-            &::after{
+
+            &::after {
                 outline: 1900px solid #E26285;
 
                 transition: 1.5s;
-            
-             }
+
+            }
+
             .works-card__logo {
                 transform: translate(-93px, 26px);
                 scale: 0.49;
@@ -492,10 +504,10 @@ animation-delay: 1s;             }
         }
 
         &.active {
-            &::after{
+            &::after {
                 outline: 1900px solid #E26285;
-                animation-delay: 1s;              
-             }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -512,14 +524,16 @@ animation-delay: 1s;             }
         border-radius: rem-calc(24);
         // mix-blend-mode: plus-lighter;
 
-        background-color:#1A1A1A;
+        background-color: #1A1A1A;
         will-change: transform;
+
         .works-card__inner {
             padding: 13px 24px 24px 24px;
             border-radius: rem-calc(24);
-            background-color:#1A1A1A;
+            background-color: #1A1A1A;
         }
-        .works-card__open{
+
+        .works-card__open {
             opacity: 1;
         }
 
@@ -834,7 +848,7 @@ animation-delay: 1s;             }
             }
 
 
-           
+
         }
 
         &.works-card--x5 {
@@ -855,7 +869,7 @@ animation-delay: 1s;             }
             }
 
 
-          
+
         }
 
         &.works-card--uralsib {
@@ -876,7 +890,7 @@ animation-delay: 1s;             }
             }
 
 
-           
+
         }
 
         &.works-card--wo {
@@ -899,7 +913,7 @@ animation-delay: 1s;             }
 
 
 
-           
+
         }
 
 
@@ -922,7 +936,7 @@ animation-delay: 1s;             }
                 }
             }
 
-         
+
         }
 
         &.works-card--likeСenter {
@@ -945,7 +959,7 @@ animation-delay: 1s;             }
                 }
             }
 
-           
+
         }
 
         &.works-card--thirty-six {
@@ -967,7 +981,7 @@ animation-delay: 1s;             }
                 }
             }
 
-           
+
         }
 
         &.works-card--vanguard {
@@ -991,7 +1005,7 @@ animation-delay: 1s;             }
                 }
             }
 
-           
+
         }
 
         &.works-card--Gravion {
@@ -1040,7 +1054,7 @@ animation-delay: 1s;             }
 
 
 
-           
+
         }
 
         &.works-card--Beauty-Maker {
@@ -1048,6 +1062,7 @@ animation-delay: 1s;             }
                 transform: translate(12.2vw, 106px);
                 width: 20vw;
             }
+
             &:hover {
 
 
@@ -1058,7 +1073,7 @@ animation-delay: 1s;             }
                 }
             }
 
-           
+
         }
     }
 }
@@ -1087,7 +1102,8 @@ animation-delay: 1s;             }
         padding-top: 70px;
         padding-bottom: 40px;
     }
-    .works-card:hover{
+
+    .works-card:hover {
         scale: 1;
     }
 

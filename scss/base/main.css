@@ -1545,8 +1545,8 @@ a {
 
 .works-card.works-card--Alibaba.active::after {
   outline: 1900px solid #FB6322;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--knowledge .works-card__logo {
@@ -1569,8 +1569,8 @@ a {
 
 .works-card.works-card--knowledge.active::after {
   outline: 1900px solid #5289EB;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--x5 .works-card__logo {
@@ -1599,8 +1599,8 @@ a {
 
 .works-card.works-card--x5.active::after {
   outline: 1900px solid #F78F1E;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--uralsib .works-card__logo {
@@ -1629,8 +1629,8 @@ a {
 
 .works-card.works-card--uralsib.active::after {
   outline: 1900px solid #1D63FF;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--wo .works-card__logo {
@@ -1653,8 +1653,8 @@ a {
 
 .works-card.works-card--wo:hover::after {
   outline: 1900px solid #FFB1B1;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--wo.active::after {
@@ -1704,8 +1704,8 @@ a {
 
 .works-card.works-card--pyaterochka.active::after {
   outline: 1900px solid #F78F1E;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--likeСenter .works-card__logo {
@@ -1734,8 +1734,8 @@ a {
 
 .works-card.works-card--likeСenter.active::after {
   outline: 1900px solid #FF2C43;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--thirty-six .works-card__logo {
@@ -1764,8 +1764,8 @@ a {
 
 .works-card.works-card--thirty-six.active::after {
   outline: 1900px solid #4374AE;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--vanguard .works-card__logo {
@@ -1794,8 +1794,8 @@ a {
 
 .works-card.works-card--vanguard.active::after {
   outline: 1900px solid #E94D05;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--Gravion .works-card__logo {
@@ -1824,8 +1824,8 @@ a {
 
 .works-card.works-card--Gravion.active::after {
   outline: 1900px solid #4F5F79;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--Gorzdrav .works-card__logo {
@@ -1860,8 +1860,8 @@ a {
 
 .works-card.works-card--Gorzdrav.active::after {
   outline: 1900px solid #E94D05;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card.works-card--Beauty-Maker .works-card__logo {
@@ -1890,8 +1890,8 @@ a {
 
 .works-card.works-card--Beauty-Maker.active::after {
   outline: 1900px solid #E26285;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .works-card:hover {
