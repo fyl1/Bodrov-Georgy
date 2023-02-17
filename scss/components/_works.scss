@@ -122,6 +122,7 @@
             &::after {
                 outline: 1900px solid #FB6322;
                 animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
 
@@ -153,7 +154,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #5289EB;
-                animation-delay: 2s;
+                transition: 2s 1s;
 
             }
         }
@@ -191,7 +192,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #F78F1E;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -225,7 +226,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #1D63FF;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -260,7 +261,7 @@
 
             &::after {
                 outline: 1900px solid #FFB1B1;
-                transition: 1.5s;
+                transition: 2s 1s;
 
             }
         }
@@ -315,7 +316,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #F78F1E;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -352,7 +353,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #FF2C43;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -389,7 +390,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #4374AE;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -426,7 +427,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #E94D05;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -460,7 +461,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #4F5F79;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -502,7 +503,7 @@
 
             &::after {
                 outline: 1900px solid #E94D05;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
@@ -537,7 +538,7 @@
         &.active {
             &::after {
                 outline: 1900px solid #E26285;
-                animation-delay: 2s;
+                transition: 2s 1s;
             }
         }
     }
