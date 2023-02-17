@@ -58,9 +58,13 @@
   &.modal-Alibaba {
     .modal__logo {
       svg {
+        width: rem-calc(84);
         fill: #fb6322;
         transition: 1s;
       }
+    }
+    .modal-rezult__img{
+      background-color: #f2e1e1;
     }
   }
 
@@ -75,6 +79,7 @@
   &.modal-x5 {
     .modal__logo {
       svg {
+        width: rem-calc(181);
         fill: #f78f1e;
         transition: 1s;
       }
@@ -84,9 +89,14 @@
   &.modal-uralsib {
     .modal__logo {
       svg {
+        width: rem-calc(135);
         fill: #1d63ff;
         transition: 1s;
       }
+    }
+    
+    .modal-rezult__img{
+      background-color: #f5f2e1;
     }
   }
 
@@ -97,9 +107,36 @@
         transition: 1s;
       }
     }
+    .modal-rezult__img{
+      background-color:#ffdfdf;
+    }
   }
 
   &.modal-pyaterochka {
+    .modal__logo {
+      svg {
+        width: rem-calc(142);
+        
+      }
+    }
+    .modal-rezult {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .modal-rezult__title{
+    width: 100%;
+  }
+  .modal-rezult__img{
+    overflow: inherit;
+    width: 50%;
+    order: 2;
+  }
+    .modal-rezult__list{
+      width: 50%;
+    }
+    .modal-rezult__img img{
+      transform: scale(1) translate(0%, 0%);
+    }
   }
 
   &.modal-likeСenter {
@@ -109,6 +146,7 @@
         transition: 1s;
       }
     }
+   
   }
 
   &.modal-thirty-six {
@@ -116,9 +154,13 @@
       top: -3px;
 
       svg {
+        width: rem-calc(47);
         fill: #4374ae;
         transition: 1s;
       }
+    }
+    .modal-rezult__img{
+      background-color: #e3f0ff;
     }
   }
 
@@ -134,6 +176,7 @@
   &.modal-Gravion {
     .modal__logo {
       svg {
+        width: rem-calc(60);
         fill: #4f5f79;
         transition: 1s;
       }
@@ -143,18 +186,26 @@
   &.modal-Gorzdrav {
     .modal__logo {
       svg {
+        width: rem-calc(46);
         fill: #2ca180;
         transition: 1s;
       }
+    }
+    .modal-rezult__img{
+      background-color:   #fdede6;
     }
   }
 
   &.modal-Beauty-Maker {
     .modal__logo {
       svg {
+        width: rem-calc(156);
         fill: #e26285;
         transition: 1s;
       }
+    }
+    .modal-rezult__img{
+      background-color:#f2e4e8;
     }
   }
 
@@ -298,6 +349,7 @@
 
   &__text {
     width: 40%;
+    min-width: 40%;
     padding-right: rem-calc(60);
     padding-left: rem-calc(50);
     padding-top: 30px;
@@ -357,6 +409,10 @@
     img {
       border-radius: rem-calc(30 0 0 30);
       transform: scale(2) translate(0%, 0%);
+    }
+    .content-3{
+      transform: scale(1.5) translate(0%, 15.0%);
+
     }
   }
 }
@@ -472,7 +528,7 @@
 .modal.modal--open .modal__logo {
   width: fit-content;
   height: 60px;
-  top: 10px;
+  top: 0px;
   scale: 1;
   max-width: 30%;
 
@@ -485,7 +541,7 @@
 
   svg {
     scale: 1;
-    width: fit-content;
+    // width: fit-content;
 
     height: 100%;
     transition: 1s;

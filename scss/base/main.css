@@ -973,9 +973,14 @@ a {
 }
 
 .modal.modal-Alibaba .modal__logo svg {
+  width: 5.25rem;
   fill: #fb6322;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.modal.modal-Alibaba .modal-rezult__img {
+  background-color: #f2e1e1;
 }
 
 .modal.modal-knowledge .modal__logo img {
@@ -983,21 +988,64 @@ a {
 }
 
 .modal.modal-x5 .modal__logo svg {
+  width: 11.3125rem;
   fill: #f78f1e;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-uralsib .modal__logo svg {
+  width: 8.4375rem;
   fill: #1d63ff;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.modal.modal-uralsib .modal-rezult__img {
+  background-color: #f5f2e1;
 }
 
 .modal.modal-wo .modal__logo svg {
   fill: #ffb1b1;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.modal.modal-wo .modal-rezult__img {
+  background-color: #ffdfdf;
+}
+
+.modal.modal-pyaterochka .modal__logo svg {
+  width: 8.875rem;
+}
+
+.modal.modal-pyaterochka .modal-rezult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal.modal-pyaterochka .modal-rezult__title {
+  width: 100%;
+}
+
+.modal.modal-pyaterochka .modal-rezult__img {
+  overflow: inherit;
+  width: 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.modal.modal-pyaterochka .modal-rezult__list {
+  width: 50%;
+}
+
+.modal.modal-pyaterochka .modal-rezult__img img {
+  -webkit-transform: scale(1) translate(0%, 0%);
+          transform: scale(1) translate(0%, 0%);
 }
 
 .modal.modal-likeСenter .modal__logo svg {
@@ -1011,9 +1059,14 @@ a {
 }
 
 .modal.modal-thirty-six .modal__logo.modal__logo svg {
+  width: 2.9375rem;
   fill: #4374ae;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.modal.modal-thirty-six .modal-rezult__img {
+  background-color: #e3f0ff;
 }
 
 .modal.modal-vanguard .modal__logo svg {
@@ -1023,21 +1076,32 @@ a {
 }
 
 .modal.modal-Gravion .modal__logo svg {
+  width: 3.75rem;
   fill: #4f5f79;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .modal.modal-Gorzdrav .modal__logo svg {
+  width: 2.875rem;
   fill: #2ca180;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
+.modal.modal-Gorzdrav .modal-rezult__img {
+  background-color: #fdede6;
+}
+
 .modal.modal-Beauty-Maker .modal__logo svg {
+  width: 9.75rem;
   fill: #e26285;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.modal.modal-Beauty-Maker .modal-rezult__img {
+  background-color: #f2e4e8;
 }
 
 .modal__header {
@@ -1183,6 +1247,7 @@ a {
 
 .modal-intro__text {
   width: 40%;
+  min-width: 40%;
   padding-right: 3.75rem;
   padding-left: 3.125rem;
   padding-top: 30px;
@@ -1235,6 +1300,11 @@ a {
   border-radius: 1.875rem 0 0 1.875rem;
   -webkit-transform: scale(2) translate(0%, 0%);
           transform: scale(2) translate(0%, 0%);
+}
+
+.modal-intro__img .content-3 {
+  -webkit-transform: scale(1.5) translate(0%, 15%);
+          transform: scale(1.5) translate(0%, 15%);
 }
 
 .modal-rezult {
@@ -1345,7 +1415,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   height: 60px;
-  top: 10px;
+  top: 0px;
   scale: 1;
   max-width: 30%;
 }
@@ -1360,9 +1430,6 @@ a {
 
 .modal.modal--open .modal__logo svg {
   scale: 1;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   height: 100%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1612,8 +1679,8 @@ a {
   -webkit-transform: translate(-145px, 30px);
           transform: translate(-145px, 30px);
   scale: 0.4;
-  -webkit-transition: scale 1189.28ms ease 0ms, all 1.4s ease;
-  transition: scale 1189.28ms ease 0ms, all 1.4s ease;
+  -webkit-transition: scale 1011.52ms ease 0ms, all 1s ease;
+  transition: scale 1011.52ms ease 0ms, all 1s ease;
 }
 
 .works-card.works-card--x5:hover .works-card__logo svg {
@@ -1751,8 +1818,8 @@ a {
   -webkit-transform: translate(-88px, -99px);
           transform: translate(-88px, -99px);
   scale: 0.29;
-  -webkit-transition: 1.8s;
-  transition: 1.8s;
+  -webkit-transition: all 1152.37ms ease 0ms;
+  transition: all 1152.37ms ease 0ms;
 }
 
 .works-card.works-card--likeСenter:hover .works-card__logo svg {
@@ -1785,8 +1852,8 @@ a {
   -webkit-transform: translate(-88px, -117px);
           transform: translate(-88px, -117px);
   scale: 0.29;
-  -webkit-transition: all 1427.52ms ease 0ms;
-  transition: all 1427.52ms ease 0ms;
+  -webkit-transition: all 1001.68ms ease 0s;
+  transition: all 1001.68ms ease 0s;
 }
 
 .works-card.works-card--thirty-six:hover .works-card__logo svg {
