@@ -1513,6 +1513,7 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   z-index: -1;
+  border-radius: 50%;
 }
 
 .works-card .works-card__open {
@@ -1553,6 +1554,8 @@ a {
   -webkit-transform: translate(7vw, 93px);
           transform: translate(7vw, 93px);
   width: 14vw;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .works-card.works-card--knowledge:hover::after {
@@ -1565,6 +1568,8 @@ a {
   -webkit-transform: translate(-97px, -15px);
           transform: translate(-97px, -15px);
   scale: 0.4;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 
 .works-card.works-card--knowledge.active::after {
@@ -1577,6 +1582,8 @@ a {
   -webkit-transform: translate(4vw, 111px);
           transform: translate(4vw, 111px);
   width: 20vw;
+  -webkit-transition: 1.6s;
+  transition: 1.6s;
 }
 
 .works-card.works-card--x5:hover::after {
@@ -1589,6 +1596,8 @@ a {
   -webkit-transform: translate(-145px, 30px);
           transform: translate(-145px, 30px);
   scale: 0.4;
+  -webkit-transition: scale 1189.28ms ease 0ms, all 1.4s ease;
+  transition: scale 1189.28ms ease 0ms, all 1.4s ease;
 }
 
 .works-card.works-card--x5:hover .works-card__logo svg {
@@ -1712,6 +1721,8 @@ a {
   -webkit-transform: translate(9vw, 65px);
           transform: translate(9vw, 65px);
   width: 11vw;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
 }
 
 .works-card.works-card--likeСenter:hover::after {
@@ -1724,6 +1735,8 @@ a {
   -webkit-transform: translate(-88px, -99px);
           transform: translate(-88px, -99px);
   scale: 0.29;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
 }
 
 .works-card.works-card--likeСenter:hover .works-card__logo svg {
@@ -1742,6 +1755,8 @@ a {
   -webkit-transform: translate(9.2vw, 57px);
           transform: translate(9.2vw, 57px);
   width: 10vw;
+  -webkit-transition: 1.6s;
+  transition: 1.6s;
 }
 
 .works-card.works-card--thirty-six:hover::after {
@@ -1754,6 +1769,8 @@ a {
   -webkit-transform: translate(-88px, -117px);
           transform: translate(-88px, -117px);
   scale: 0.29;
+  -webkit-transition: all 1427.52ms ease 0ms;
+  transition: all 1427.52ms ease 0ms;
 }
 
 .works-card.works-card--thirty-six:hover .works-card__logo svg {
@@ -1772,6 +1789,8 @@ a {
   -webkit-transform: translate(7.2vw, 26px);
           transform: translate(7.2vw, 26px);
   width: 14vw;
+  -webkit-transition: 1.6s;
+  transition: 1.6s;
 }
 
 .works-card.works-card--vanguard:hover::after {
@@ -1784,6 +1803,8 @@ a {
   -webkit-transform: translate(-280px, -320px);
           transform: translate(-280px, -320px);
   scale: 0.20;
+  -webkit-transition: scale 1189.28ms ease 0ms, all 1.4s ease;
+  transition: scale 1189.28ms ease 0ms, all 1.4s ease;
 }
 
 .works-card.works-card--vanguard:hover .works-card__logo svg {

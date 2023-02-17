@@ -67,6 +67,7 @@
         top: 50%;
         transition: 1s;
         z-index: -1;
+        border-radius: 50%;
 
     }
 
@@ -115,6 +116,7 @@
         .works-card__logo {
             transform: translate(7vw, 93px);
             width: 14vw;
+            transition: 0.8s;
         }
 
         &:hover {
@@ -128,6 +130,7 @@
             .works-card__logo {
                 transform: translate(-97px, -15px);
                 scale: 0.4;
+                transition: 1.3s;
 
             }
         }
@@ -145,6 +148,7 @@
         .works-card__logo {
             transform: translate(4vw, 111px);
             width: 20vw;
+            transition: 1.6s;
         }
 
         &:hover {
@@ -158,6 +162,8 @@
             .works-card__logo {
                 transform: translate(-145px, 30px);
                 scale: 0.4;
+                // transition: all 1326.41ms ease 0ms;
+                transition: scale 1189.28ms ease 0ms, all 1.4s ease;
 
                 svg {
 
@@ -303,6 +309,8 @@
         .works-card__logo {
             transform: translate(9vw, 65px);
             width: 11vw;
+            transition: 1.8s;
+
         }
 
         &:hover {
@@ -316,6 +324,7 @@
             .works-card__logo {
                 transform: translate(-88px, -99px);
                 scale: 0.29;
+                transition: 1.8s;
 
                 svg {
 
@@ -337,6 +346,8 @@
         .works-card__logo {
             transform: translate(9.2vw, 57px);
             width: 10vw;
+            transition: 1.6s;
+
         }
 
         &:hover {
@@ -350,6 +361,7 @@
             .works-card__logo {
                 transform: translate(-88px, -117px);
                 scale: 0.29;
+                transition: all 1427.52ms ease 0ms;
 
                 svg {
 
@@ -371,6 +383,7 @@
         .works-card__logo {
             transform: translate(7.2vw, 26px);
             width: 14vw;
+            transition: 1.6s;
 
         }
 
@@ -385,6 +398,7 @@
             .works-card__logo {
                 transform: translate(-280px, -320px);
                 scale: 0.20;
+                transition: scale 1189.28ms ease 0ms, all 1.4s ease;
 
                 svg {
 
@@ -397,7 +411,8 @@
         &.active {
             &::after {
                 outline: 1900px solid #E94D05;
-                animation-delay: 2s;            }
+                animation-delay: 2s;
+            }
         }
     }
 
@@ -430,7 +445,8 @@
         &.active {
             &::after {
                 outline: 1900px solid #4F5F79;
-                animation-delay: 2s;            }
+                animation-delay: 2s;
+            }
         }
     }
 
