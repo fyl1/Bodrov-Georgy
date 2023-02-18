@@ -22,6 +22,10 @@ z-index: 99;
 .logo-inner {
 }
 .logo-img {
+  img{
+    max-width: rem-calc(100);
+    height: auto;
+  }
 }
 .menu {
   // .menu__inner

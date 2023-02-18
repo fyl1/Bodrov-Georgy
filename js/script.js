@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let sum3 = el.scrollTop / 55;
             let sum5 = el.scrollTop / 55;
             content.forEach((ell) => {
-                ell.style.transform = `scale(2) translate(0%,-${sum + 1}%)`;
+                ell.style.transform = `scale(1.3) translate(0%,-${sum + 1}%)`;
             });
             content2.forEach((ell) => {
                 ell.style.transform = `scale(1.7) translate(0%,${sum2 - 20}%)`;

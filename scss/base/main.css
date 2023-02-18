@@ -272,6 +272,11 @@ a {
   padding: 1rem 1.5rem;
 }
 
+.logo-img img {
+  max-width: 6.25rem;
+  height: auto;
+}
+
 .menu__link {
   font-weight: 500;
   font-size: 0.75rem;
@@ -1302,9 +1307,24 @@ a {
           transform: scale(2) translate(0%, 0%);
 }
 
+.modal-intro__img .content-1 {
+  -webkit-transform: scale(1.3) translate(0%, 15%);
+          transform: scale(1.3) translate(0%, 15%);
+}
+
+.modal-intro__img .content-2 {
+  -webkit-transform: scale(1.7) translate(0%, -20%);
+          transform: scale(1.7) translate(0%, -20%);
+}
+
 .modal-intro__img .content-3 {
   -webkit-transform: scale(1.5) translate(0%, 15%);
           transform: scale(1.5) translate(0%, 15%);
+}
+
+.modal-intro__img .content-5 {
+  -webkit-transform: scale(1.2) translate(0%, 10%);
+          transform: scale(1.2) translate(0%, 10%);
 }
 
 .modal-rezult {
@@ -1872,8 +1892,7 @@ a {
   -webkit-transform: translate(7.2vw, 26px);
           transform: translate(7.2vw, 26px);
   width: 14vw;
-  -webkit-transition: 1.6s;
-  transition: 1.6s;
+  transition: transform 1s cubic-bezier(0, 0, 0.35, 0.84), all 1s ease, -webkit-transform 1s cubic-bezier(0, 0, 0.35, 0.84);
 }
 
 .works-card.works-card--vanguard:hover::after {
@@ -1886,8 +1905,12 @@ a {
   -webkit-transform: translate(-280px, -320px);
           transform: translate(-280px, -320px);
   scale: 0.20;
-  -webkit-transition: scale 1189.28ms ease 0ms, all 1.4s ease;
-  transition: scale 1189.28ms ease 0ms, all 1.4s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition: all 1s cubic-bezier(0, 0, 0.39, 0.73), -webkit-transform 1s cubic-bezier(0, 0, 0.39, 0.73);
+  transition: all 1s cubic-bezier(0, 0, 0.39, 0.73), -webkit-transform 1s cubic-bezier(0, 0, 0.39, 0.73);
+  transition: transform 1s cubic-bezier(0, 0, 0.39, 0.73), all 1s cubic-bezier(0, 0, 0.39, 0.73);
+  transition: transform 1s cubic-bezier(0, 0, 0.39, 0.73), all 1s cubic-bezier(0, 0, 0.39, 0.73), -webkit-transform 1s cubic-bezier(0, 0, 0.39, 0.73);
 }
 
 .works-card.works-card--vanguard:hover .works-card__logo svg {
