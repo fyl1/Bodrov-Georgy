@@ -143,10 +143,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 ell.style.transform = `scale(1.3) translate(0%,-${sum + 1}%)`;
             });
             content2.forEach((ell) => {
-                ell.style.transform = `scale(1.7) translate(0%,${sum2 - 20}%)`;
+                ell.style.transform = `scale(1.2) translate(0%,${sum2 - 30}%)`;
             });
             content3.forEach((ell) => {
-                ell.style.transform = `scale(1.5) translate(0%,${sum2 + 15}%)`;
+                ell.style.transform = `scale(1.2) translate(0%,${sum2 + 15}%)`;
             });
             content5.forEach((ell) => {
                 ell.style.transform = `scale(1.2) translate(0%,${sum2 - 10}%)`;

@@ -73,6 +73,7 @@
 
     .works-card__open {
         opacity: 0;
+        transition: 0s;
     }
 
     &.active {
@@ -399,9 +400,10 @@
         .works-card__logo {
             transform: translate(7.2vw, 26px);
             width: 14vw;
-            // transition: 1s;
-            // animation: resizeBox2 1s forwards linear;
-            transition: transform 1s cubic-bezier(0, 0, 0.35, 0.84), all 1s ease, -webkit-transform 1s cubic-bezier(0, 0, 0.35, 0.84);        }
+            transition: 1s;
+            animation: resizeBox2 1s forwards cubic-bezier(0, 0, 0.35, 0.84);
+            // transition: transform 1s cubic-bezier(0, 0, 0.35, 0.84), all 1s ease, -webkit-transform 1s cubic-bezier(0, 0, 0.35, 0.84);        
+        }
 
         &:hover {
 
@@ -416,8 +418,8 @@
                 scale: 0.20;
                 transition:  all 1s ease;
                 // transition: scale 642.776ms ease 1s, transform 1s ease, all 0s ease, -webkit-transform 1s ease;
-                // animation: resizeBox 1s forwards linear;
-                transition:transform 1s cubic-bezier(0, 0, 0.39, 0.73),  all 1s cubic-bezier(0, 0, 0.39, 0.73);
+                animation: resizeBox 1s forwards cubic-bezier(0, 0, 0.39, 0.73);
+                // transition:transform 1s cubic-bezier(0, 0, 0.39, 0.73),  all 1s cubic-bezier(0, 0, 0.39, 0.73);
                 svg {
 
                     fill: #C3322B;
@@ -569,6 +571,7 @@
 
         .works-card__open {
             opacity: 1;
+            transition: 0.5s;
         }
 
 
@@ -607,11 +610,11 @@
         &::before {
             content: "";
             width: 100%;
-            height: 30px;
+            height: 96px;
             position: absolute;
             left: 0;
             bottom: 0;
-            background-image: linear-gradient(180deg, rgba(25, 25, 25, 0.7) 0%, #191919 100%);
+            background-image:linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
             z-index: 1;
             border-radius: rem-calc(24);
         }
@@ -789,17 +792,17 @@
     background-color: transparent;
     z-index: 44;
 }
-// @keyframes resizeBox {
-//     0% { transform: scale(1) translate(7.2vw, 26px) ; }
-//     50% { transform: scale(0.35)  translate(-100px, -100px);; }
-//     100% { transform: scale(0.2) translate(-280px, -320px); }
-//   }
-//   @keyframes resizeBox2 {
-//     0% { transform: scale(0.2) translate(-280px, -320px); }
+@keyframes resizeBox {
+    0% { transform: scale(1) translate(7.2vw, 26px) ; }
+    50% { transform: scale(0.95)  translate(-100px, -100px);; }
+    100% { transform: scale(1) translate(-280px, -320px); }
+  }
+  @keyframes resizeBox2 {
+    0% { transform: scale(0.2) translate(-280px, -320px); }
     
-//     // 50% { transform: scale(0.35)  translate(-100px, -100px);; }
-//     100% { transform: scale(1) translate(7.2vw, 26px) ; }
-//   }
+    50% { transform: scale(0.55)  translate(-100px, -100px); }
+    100% { transform: scale(1) translate(7.2vw, 26px) ; }
+  }
 @media (min-width: 480px) {}
 
 @media (min-width: 768px) {}
@@ -1032,6 +1035,7 @@
             .works-card__logo {
                 transform: translate(14.2vw, 26px);
                 width: 14vw;
+                animation: none;
 
             }
 
@@ -1045,7 +1049,7 @@
 
                     scale: 0.35;
 
-
+                    animation: none;
                 }
             }
 
@@ -1352,7 +1356,13 @@
                 width: 24vw;
             }
 
+            &:hover {
 
+                .works-card__logo {
+                    transform: translate(27px, -15px);
+
+                }
+            }
 
             &.active {
                 outline: 1900px solid #5289EB;
@@ -1430,11 +1440,17 @@
 
         &.works-card--thirty-six {
             .works-card__logo {
-                transform: translate(25.2vw, 57px);
-                width: 40vw;
+                transform: translate(34.2vw, 58px);
             }
 
 
+            &:hover {
+
+                .works-card__logo {
+                    transform: translate(-13px, -103px);
+                    scale: 0.39;
+                }
+            }
 
             &.active {
                 outline: 1900px solid #4374AE;
@@ -1448,7 +1464,13 @@
 
             }
 
+            &:hover {
 
+                .works-card__logo {
+                    transform: translate(-153px, -222px);
+                                        scale: 0.3;
+                }
+            }
 
             &.active {
                 outline: 1900px solid #E94D05;
