@@ -1331,6 +1331,11 @@ a {
           transform: scale(1.2) translate(0%, -10%);
 }
 
+.modal-intro__img .content-6 {
+  -webkit-transform: scale(1.4) translate(0%, 0%);
+          transform: scale(1.4) translate(0%, 0%);
+}
+
 .modal-rezult {
   margin: 7.5rem 3.125rem 0 3.125rem;
 }
@@ -1406,6 +1411,17 @@ a {
 .modal-rezult .content-5 {
   -webkit-transform: scale(1.2) translate(0%, -10%);
           transform: scale(1.2) translate(0%, -10%);
+}
+
+.modal-rezult .content-6 {
+  -webkit-transform: scale(1.4) translate(0%, 0%);
+          transform: scale(1.4) translate(0%, 0%);
+}
+
+.modal-rezult .content-7 {
+  -webkit-transform: scale(1.7) translate(0%, 0%);
+          transform: scale(1.7) translate(0%, 0%);
+  background-color: #e7e7e7;
 }
 
 .modal-contact__link {
@@ -2131,8 +2147,8 @@ a {
   position: absolute;
   left: 50%;
   bottom: 10px;
-  -webkit-transform: translate(-50%, 150%);
-          transform: translate(-50%, 150%);
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 5;
@@ -2209,8 +2225,8 @@ a {
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
   color: #E5DCD7;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -2289,8 +2305,8 @@ a {
             transform: scale(1) translate(7.2vw, 26px);
   }
   50% {
-    -webkit-transform: scale(0.95) translate(-100px, -100px);
-            transform: scale(0.95) translate(-100px, -100px);
+    -webkit-transform: scale(1) translate(-130px, -120px);
+            transform: scale(1) translate(-130px, -120px);
   }
   100% {
     -webkit-transform: scale(1) translate(-280px, -320px);
@@ -2304,8 +2320,8 @@ a {
             transform: scale(1) translate(7.2vw, 26px);
   }
   50% {
-    -webkit-transform: scale(0.95) translate(-100px, -100px);
-            transform: scale(0.95) translate(-100px, -100px);
+    -webkit-transform: scale(1) translate(-130px, -120px);
+            transform: scale(1) translate(-130px, -120px);
   }
   100% {
     -webkit-transform: scale(1) translate(-280px, -320px);

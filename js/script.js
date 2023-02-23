@@ -135,6 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const content2 = document.querySelectorAll('.content-2')
             const content3 = document.querySelectorAll('.content-3')
             const content5 = document.querySelectorAll('.content-5')
+            const content6 = document.querySelectorAll('.content-6')
+            const content7 = document.querySelectorAll('.content-7')
             let sum = el.scrollTop / 40;
             let sum2 = el.scrollTop / 55;
             let sum3 = el.scrollTop / 55;
@@ -150,6 +152,12 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             content5.forEach((ell) => {
                 ell.style.transform = `scale(1.2) translate(0%,${sum2 - 10}%)`;
+            });
+            content6.forEach((ell) => {
+                ell.style.transform = `scale(1.4) translate(0%,${sum2 - 0}%)`;
+            });
+            content7.forEach((ell) => {
+                ell.style.transform = `scale(1.8) translate(0%,${sum2 - 10}%)`;
             });
         });
 

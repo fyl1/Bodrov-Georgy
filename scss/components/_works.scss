@@ -630,7 +630,7 @@
         position: absolute;
         left: 50%;
         bottom: 10px;
-        transform: translate(-50%, 150%);
+        transform: translate(-50%, 100%);
         transition: 0.5s;
         z-index: 5;
 
@@ -711,7 +711,7 @@
         font-feature-settings: 'pnum'on, 'lnum'on;
 
         color: #E5DCD7;
-        transform: translateY(100px);
+        transform: translateY(150px);
         transition: 1s;
 
 
@@ -794,7 +794,7 @@
 }
 @keyframes resizeBox {
     0% { transform: scale(1) translate(7.2vw, 26px) ; }
-    50% { transform: scale(0.95)  translate(-100px, -100px);; }
+    50% { transform: scale(1)  translate(-130px, -120px);; }
     100% { transform: scale(1) translate(-280px, -320px); }
   }
   @keyframes resizeBox2 {
