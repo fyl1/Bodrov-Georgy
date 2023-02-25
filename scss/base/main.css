@@ -1317,13 +1317,13 @@ a {
 }
 
 .modal-intro__img .content-2 {
-  -webkit-transform: scale(1.2) translate(0%, -30%);
-          transform: scale(1.2) translate(0%, -30%);
+  -webkit-transform: scale(1.6) translate(0%, -20%);
+          transform: scale(1.6) translate(0%, -20%);
 }
 
 .modal-intro__img .content-3 {
-  -webkit-transform: scale(1.2) translate(0%, 15%);
-          transform: scale(1.2) translate(0%, 15%);
+  -webkit-transform: scale(1.2) translate(0%, 5%);
+          transform: scale(1.2) translate(0%, 5%);
 }
 
 .modal-intro__img .content-5 {
@@ -1334,6 +1334,12 @@ a {
 .modal-intro__img .content-6 {
   -webkit-transform: scale(1.4) translate(0%, 0%);
           transform: scale(1.4) translate(0%, 0%);
+}
+
+.modal-intro__img .content-7 {
+  -webkit-transform: scale(1.7) translate(0%, 0%);
+          transform: scale(1.7) translate(0%, 0%);
+  background-color: #e7e7e7;
 }
 
 .modal-rezult {
@@ -1399,13 +1405,13 @@ a {
 }
 
 .modal-rezult .content-2 {
-  -webkit-transform: scale(1.2) translate(0%, -30%);
-          transform: scale(1.2) translate(0%, -30%);
+  -webkit-transform: scale(1.6) translate(0%, -20%);
+          transform: scale(1.6) translate(0%, -20%);
 }
 
 .modal-rezult .content-3 {
-  -webkit-transform: scale(1.2) translate(0%, 15%);
-          transform: scale(1.2) translate(0%, 15%);
+  -webkit-transform: scale(1.2) translate(0%, 5%);
+          transform: scale(1.2) translate(0%, 5%);
 }
 
 .modal-rezult .content-5 {
@@ -1932,13 +1938,11 @@ a {
 }
 
 .works-card.works-card--vanguard .works-card__logo {
-  -webkit-transform: translate(7.2vw, 26px);
-          transform: translate(7.2vw, 26px);
-  width: 14vw;
+  -webkit-transform: translate(9.2vw, 26px);
+          transform: translate(9.2vw, 26px);
+  width: 10vw;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation: resizeBox2 1s forwards cubic-bezier(0, 0, 0.35, 0.84);
-          animation: resizeBox2 1s forwards cubic-bezier(0, 0, 0.35, 0.84);
 }
 
 .works-card.works-card--vanguard:hover::after {
@@ -1953,8 +1957,6 @@ a {
   scale: 0.20;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-animation: resizeBox 1s forwards cubic-bezier(0, 0, 0.39, 0.73);
-          animation: resizeBox 1s forwards cubic-bezier(0, 0, 0.39, 0.73);
 }
 
 .works-card.works-card--vanguard:hover .works-card__logo svg {

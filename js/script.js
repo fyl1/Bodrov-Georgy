@@ -137,18 +137,19 @@ document.addEventListener('DOMContentLoaded', function () {
             const content5 = document.querySelectorAll('.content-5')
             const content6 = document.querySelectorAll('.content-6')
             const content7 = document.querySelectorAll('.content-7')
+            const content8 = document.querySelectorAll('.content-8')
             let sum = el.scrollTop / 40;
             let sum2 = el.scrollTop / 55;
             let sum3 = el.scrollTop / 55;
             let sum5 = el.scrollTop / 55;
             content.forEach((ell) => {
-                ell.style.transform = `scale(1.3) translate(0%,-${sum + 1}%)`;
+                ell.style.transform = `scale(1.4) translate(0%,${sum2 - 30}%)`;
             });
             content2.forEach((ell) => {
-                ell.style.transform = `scale(1.2) translate(0%,${sum2 - 30}%)`;
+                ell.style.transform = `scale(1.6) translate(0%,${sum2 - 20}%)`;
             });
             content3.forEach((ell) => {
-                ell.style.transform = `scale(1.2) translate(0%,${sum2 + 15}%)`;
+                ell.style.transform = `scale(1.2) translate(0%,${sum2 + 5}%)`;
             });
             content5.forEach((ell) => {
                 ell.style.transform = `scale(1.2) translate(0%,${sum2 - 10}%)`;
@@ -157,7 +158,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 ell.style.transform = `scale(1.4) translate(0%,${sum2 - 0}%)`;
             });
             content7.forEach((ell) => {
-                ell.style.transform = `scale(1.8) translate(0%,${sum2 - 10}%)`;
+                ell.style.transform = `scale(1.8) translate(0%,${sum2 - 20}%)`;
+            });
+            content8.forEach((ell) => {
+                ell.style.transform = `scale(1.1) translate(0%,${sum2 - 10}%)`;
             });
         });
 

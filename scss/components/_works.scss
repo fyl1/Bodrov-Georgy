@@ -398,10 +398,10 @@
 
     &.works-card--vanguard {
         .works-card__logo {
-            transform: translate(7.2vw, 26px);
-            width: 14vw;
+            transform: translate(9.2vw, 26px);
+            width: 10vw;
             transition: 1s;
-            animation: resizeBox2 1s forwards cubic-bezier(0, 0, 0.35, 0.84);
+            // animation: resizeBox2 1s forwards cubic-bezier(0, 0, 0.35, 0.84);
             // transition: transform 1s cubic-bezier(0, 0, 0.35, 0.84), all 1s ease, -webkit-transform 1s cubic-bezier(0, 0, 0.35, 0.84);        
         }
 
@@ -418,7 +418,7 @@
                 scale: 0.20;
                 transition:  all 1s ease;
                 // transition: scale 642.776ms ease 1s, transform 1s ease, all 0s ease, -webkit-transform 1s ease;
-                animation: resizeBox 1s forwards cubic-bezier(0, 0, 0.39, 0.73);
+                // animation: resizeBox 1s forwards cubic-bezier(0, 0, 0.39, 0.73);
                 // transition:transform 1s cubic-bezier(0, 0, 0.39, 0.73),  all 1s cubic-bezier(0, 0, 0.39, 0.73);
                 svg {
 
