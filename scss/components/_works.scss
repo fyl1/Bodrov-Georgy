@@ -165,7 +165,7 @@
         .works-card__logo {
             transform: translate(4vw, 111px);
             width: 20vw;
-            transition: 1.6s;
+            transition: 1.4s;
         }
 
         &:hover {
@@ -398,7 +398,7 @@
 
     &.works-card--vanguard {
         .works-card__logo {
-            transform: translate(9.2vw, 26px);
+            transform: translate(9.2vw, 66px);
             width: 10vw;
             transition: 1s;
             // animation: resizeBox2 1s forwards cubic-bezier(0, 0, 0.35, 0.84);
@@ -414,9 +414,9 @@
             }
 
             .works-card__logo {
-                transform: translate(-280px, -320px);
-                scale: 0.20;
-                transition:  all 1s ease;
+                transform: translate(-73px, -137px);
+                scale: 0.3;
+                transition:  all 1s cubic-bezier(0, 0, 0.24, 1.2);
                 // transition: scale 642.776ms ease 1s, transform 1s ease, all 0s ease, -webkit-transform 1s ease;
                 // animation: resizeBox 1s forwards cubic-bezier(0, 0, 0.39, 0.73);
                 // transition:transform 1s cubic-bezier(0, 0, 0.39, 0.73),  all 1s cubic-bezier(0, 0, 0.39, 0.73);
@@ -1033,7 +1033,7 @@
 
         &.works-card--vanguard {
             .works-card__logo {
-                transform: translate(14.2vw, 26px);
+                transform: translate(14.2vw, 56px);
                 width: 14vw;
                 animation: none;
 
@@ -1274,7 +1274,7 @@
 
         &.works-card--vanguard {
             .works-card__logo {
-                transform: translate(34.2vw, 26px);
+                transform: translate(34.2vw, 66px);
                 width: 24vw;
 
             }
@@ -1459,7 +1459,7 @@
 
         &.works-card--vanguard {
             .works-card__logo {
-                transform: translate(24.2vw, 26px);
+                transform: translate(24.2vw, 66px);
                 width: 44vw;
 
             }
