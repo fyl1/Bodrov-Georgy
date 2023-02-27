@@ -1734,8 +1734,8 @@ a {
   -webkit-transform: translate(4vw, 111px);
           transform: translate(4vw, 111px);
   width: 20vw;
-  -webkit-transition: 1.4s;
-  transition: 1.4s;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
 }
 
 .works-card.works-card--x5:hover::after {
@@ -1955,8 +1955,8 @@ a {
   -webkit-transform: translate(-73px, -137px);
           transform: translate(-73px, -137px);
   scale: 0.3;
-  -webkit-transition: all 1s cubic-bezier(0, 0, 0.24, 1.2);
-  transition: all 1s cubic-bezier(0, 0, 0.24, 1.2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .works-card.works-card--vanguard:hover .works-card__logo svg {

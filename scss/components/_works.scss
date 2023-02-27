@@ -165,7 +165,7 @@
         .works-card__logo {
             transform: translate(4vw, 111px);
             width: 20vw;
-            transition: 1.4s;
+            transition: 1.2s;
         }
 
         &:hover {
@@ -416,7 +416,7 @@
             .works-card__logo {
                 transform: translate(-73px, -137px);
                 scale: 0.3;
-                transition:  all 1s cubic-bezier(0, 0, 0.24, 1.2);
+                transition:  all 1s ;
                 // transition: scale 642.776ms ease 1s, transform 1s ease, all 0s ease, -webkit-transform 1s ease;
                 // animation: resizeBox 1s forwards cubic-bezier(0, 0, 0.39, 0.73);
                 // transition:transform 1s cubic-bezier(0, 0, 0.39, 0.73),  all 1s cubic-bezier(0, 0, 0.39, 0.73);
