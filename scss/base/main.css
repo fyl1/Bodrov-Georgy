@@ -1185,7 +1185,7 @@ a {
 
 .modal-item {
   padding: 0 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: #242424;
   border-radius: 100px;
   font-family: "Manrope", sans-serif;
   font-style: normal;
@@ -1203,7 +1203,7 @@ a {
 
 .modal-month {
   padding: 0 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: #242424;
   border-radius: 100px;
   font-family: "Manrope", sans-serif;
   font-style: normal;
